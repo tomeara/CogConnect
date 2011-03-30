@@ -1,0 +1,1300 @@
+TCogConnect
+v7
+r0
+t323220438.147783
+cCheck dependencies
+cProcessInfoPlistFile "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/Info.plist" Resources/Info.plist
+cCpResource build/Debug-iphonesimulator/CogConnect.app/Default.png Resources/Default.png
+cCpResource build/Debug-iphonesimulator/CogConnect.app/fps_images.png Resources/fps_images.png
+cCpResource build/Debug-iphonesimulator/CogConnect.app/Icon.png Resources/Icon.png
+cCpResource build/Debug-iphonesimulator/CogConnect.app/Icon@2x.png Resources/Icon@2x.png
+cCpResource build/Debug-iphonesimulator/CogConnect.app/Icon-Small@2x.png Resources/Icon-Small@2x.png
+cCpResource build/Debug-iphonesimulator/CogConnect.app/Icon-Small.png Resources/Icon-Small.png
+cCpResource build/Debug-iphonesimulator/CogConnect.app/Icon-Small-50.png Resources/Icon-Small-50.png
+cCpResource build/Debug-iphonesimulator/CogConnect.app/Icon-72.png Resources/Icon-72.png
+cCpResource build/Debug-iphonesimulator/CogConnect.app/iTunesArtwork Resources/iTunesArtwork
+cProcessPCH /var/folders/sK/sKZINlQEF-CThSEyIOYiHU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CogConnect_Prefix-gnygkdtawxkyugasohfyvjaochza/CogConnect_Prefix.pch.gch CogConnect_Prefix.pch normal i386 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/main.o "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/main.m" normal i386 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/CogConnectAppDelegate.o "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/CogConnectAppDelegate.m" normal i386 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/HelloWorldScene.o "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/HelloWorldScene.m" normal i386 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/RootViewController.o "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/RootViewController.m" normal i386 objective-c com.apple.compilers.llvmgcc42
+cLd "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/CogConnect" normal i386
+cGenerateDSYMFile "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app.dSYM" "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/CogConnect"
+cTouch "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app"
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000004CC1288A00000000000F34A0
+t1287727242
+s996512
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004CC1224600000000001EA9C0
+t1287725638
+s2009536
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+c000000004CC121DB00000000000022F0
+t1287725531
+s8944
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGImage.h
+c000000004CC121DB0000000000002650
+t1287725531
+s9808
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/OpenAL.framework/OpenAL
+c000000004CC1226400000000000246A0
+t1287725668
+s149152
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h
+c000000004CC12308000000000000094F
+t1287725832
+s2383
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGLDrawable.h
+c000000004CC123080000000000000A61
+t1287725832
+s2657
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h
+c000000004CC123080000000000009369
+t1287725832
+s37737
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/glext.h
+c000000004CC123080000000000003C4A
+t1287725832
+s15434
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c000000004CC1230E0000000000019D40
+t1287725838
+s105792
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004CC1233C00000000000000C4
+t1287725884
+s196
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004CC12431000000000015CDB0
+t1287726129
+s1428912
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/Availability.h
+c000000004CB3FA080000000000001ADD
+t1286863368
+s6877
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/inttypes.h
+c000000004CB3E48600000000000027D1
+t1286857862
+s10193
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/math.h
+c000000004A5C14A000000000000004F1
+t1247548576
+s1265
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/objc/objc.h
+c000000004CB935700000000000000A2F
+t1287206256
+s2607
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/stddef.h
+c000000004CB3E4860000000000001404
+t1286857862
+s5124
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/stdlib.h
+c000000004CB3E4860000000000002DF5
+t1286857862
+s11765
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/string.h
+c000000004CB3E4860000000000001731
+t1286857862
+s5937
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/sys/time.h
+c000000004CBFACAC0000000000001E17
+t1287629996
+s7703
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/lib/libz.dylib
+c000000004CC109C300000000000123B0
+t1287719363
+s74672
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/Cog.h
+c000000004D928CD90000000000000199
+t1301449945
+s409
+i<Foundation/Foundation.h>
+i"cocos2d.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/Cog.m
+c000000004D928DDE00000000000004C5
+t1301450206
+s1221
+i"Cog.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/CogConnectAppDelegate.h
+c000000004D9284EA0000000000000188
+t1301447914
+s392
+i<UIKit/UIKit.h>
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/CogConnectAppDelegate.m
+c000000004D9284EA0000000000001195
+t1301447914
+s4501
+i"cocos2d.h"
+i"CogConnectAppDelegate.h"
+i"GameConfig.h"
+i"HelloWorldScene.h"
+i"RootViewController.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/GameConfig.h
+c000000004D9286910000000000000225
+t1301448337
+s549
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/HelloWorldScene.h
+c000000004D93BC530000000000000178
+t1301527635
+s376
+i"cocos2d.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/HelloWorldScene.m
+c000000004D93BC4000000000000005DD
+t1301527616
+s1501
+i"HelloWorldScene.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/RootViewController.h
+c000000004D9284EA00000000000000ED
+t1301447914
+s237
+i<UIKit/UIKit.h>
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/RootViewController.m
+c000000004D9284EA0000000000001141
+t1301447914
+s4417
+i"cocos2d.h"
+i"RootViewController.h"
+i"GameConfig.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/CogConnect_Prefix.pch
+c000000004D9284EB00000000000000B7
+t1301447915
+s183
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/Default.png
+c000000004D9284EA00000000000077AB
+t1301447914
+s30635
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/Icon-72.png
+c000000004D9284EB0000000000002C96
+t1301447915
+s11414
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/Icon-Small-50.png
+c000000004D9284EB0000000000001F2B
+t1301447915
+s7979
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/Icon-Small.png
+c000000004D9284EB000000000000135C
+t1301447915
+s4956
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/Icon-Small@2x.png
+c000000004D9284EB00000000000024F9
+t1301447915
+s9465
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/Icon.png
+c000000004D9284EB000000000000246F
+t1301447915
+s9327
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/Icon@2x.png
+c000000004D9284EB0000000000005375
+t1301447915
+s21365
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/fps_images.png
+c000000004D9284EB000000000000183B
+t1301447915
+s6203
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/iTunesArtwork
+c000000004D9284EB000000000000F21E
+t1301447915
+s61982
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/Cog.o
+t1301450208
+s12324
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/CogConnect.LinkFileList
+c000000004D93BC48000000000000029E
+t1301527624
+s670
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/CogConnectAppDelegate.o
+t1301527636
+s59476
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/HelloWorldScene.o
+t1301527636
+s13256
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/RootViewController.o
+t1301449895
+s43404
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/main.o
+t1301447943
+s3268
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app
+t1301527638
+s476
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app.dSYM
+t1301527638
+s102
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/CogConnect
+t1301527637
+s1653244
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/Default.png
+t1301447942
+s30635
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/Icon-72.png
+t1301447942
+s11414
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/Icon-Small-50.png
+t1301447942
+s7979
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/Icon-Small.png
+t1301447942
+s4956
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/Icon-Small@2x.png
+t1301447942
+s9465
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/Icon.png
+t1301447942
+s9327
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/Icon@2x.png
+t1301447942
+s21365
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/Info.plist
+t1301447942
+s832
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/PkgInfo
+t1301447942
+s8
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/fps_images.png
+t1301447942
+s6203
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/iTunesArtwork
+t1301447942
+s61982
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/libcocos2d libraries.a
+c000000004D92850600000000003C9090
+t1301447942
+s3969168
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCAction.h
+c000000004D9284EB000000000000167A
+t1301447915
+s5754
+i<sys/time.h>
+i<Foundation/Foundation.h>
+i"ccTypes.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCActionCamera.h
+c000000004D9284EB00000000000009BC
+t1301447915
+s2492
+i"CCActionInterval.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCActionEase.h
+c000000004D9284EB0000000000001671
+t1301447915
+s5745
+i"CCActionInterval.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCActionGrid.h
+c000000004D9284EB000000000000148B
+t1301447915
+s5259
+i"CCActionInterval.h"
+i"CCActionInstant.h"
+i"CCGrid.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCActionGrid3D.h
+c000000004D9284EB0000000000001A8A
+t1301447915
+s6794
+i"CCActionGrid.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCActionInstant.h
+c000000004D9284EB00000000000013AA
+t1301447915
+s5034
+i"CCAction.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCActionInterval.h
+c000000004D9284EB0000000000003265
+t1301447915
+s12901
+i"CCNode.h"
+i"CCAction.h"
+i"CCProtocols.h"
+i<sys/time.h>
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCActionManager.h
+c000000004D9284EB0000000000001071
+t1301447915
+s4209
+i"CCAction.h"
+i"Support/ccCArray.h"
+i"Support/uthash.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCActionPageTurn3D.h
+c000000004D9284EB0000000000000644
+t1301447915
+s1604
+i"CCActionGrid3D.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCActionProgressTimer.h
+c000000004D9284EB000000000000088D
+t1301447915
+s2189
+i<Foundation/Foundation.h>
+i"CCProgressTimer.h"
+i"CCActionInterval.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCActionTiledGrid.h
+c000000004D9284EB0000000000001A15
+t1301447915
+s6677
+i"CCActionGrid.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCActionTween.h
+c000000004D9284EB0000000000000931
+t1301447915
+s2353
+i<Foundation/Foundation.h>
+i"CCActionInterval.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCAnimation.h
+c000000004D9284EB000000000000126D
+t1301447915
+s4717
+i<Foundation/Foundation.h>
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCAnimationCache.h
+c000000004D9284EB00000000000008DD
+t1301447915
+s2269
+i<Foundation/Foundation.h>
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCAtlasNode.h
+c000000004D9284EB0000000000000C06
+t1301447915
+s3078
+i"CCTextureAtlas.h"
+i"CCNode.h"
+i"CCProtocols.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCBlockSupport.h
+c000000004D9284EB000000000000066F
+t1301447915
+s1647
+i<Foundation/Foundation.h>
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCCamera.h
+c000000004D9284EB0000000000000C84
+t1301447915
+s3204
+i"CCNode.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCCompatibility.h
+c000000004D9284EB0000000000003891
+t1301447915
+s14481
+i<Foundation/Foundation.h>
+i"cocos2d.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCConfiguration.h
+c000000004D9284EB0000000000000D36
+t1301447915
+s3382
+i<Foundation/Foundation.h>
+i"Platforms/CCGL.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCDirector.h
+c000000004D9284EB00000000000025C4
+t1301447915
+s9668
+i"ccConfig.h"
+i"ccTypes.h"
+i"Platforms/CCGL.h"
+i"CCProtocols.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCDrawingPrimitives.h
+c000000004D9284EB0000000000000C32
+t1301447915
+s3122
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<CoreGraphics/CGGeometry.h>
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCGrabber.h
+c000000004D9284EB00000000000005E4
+t1301447915
+s1508
+i"Platforms/CCGL.h"
+i<Foundation/Foundation.h>
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCGrid.h
+c000000004D9284EB0000000000000E5A
+t1301447915
+s3674
+i<Foundation/Foundation.h>
+i"CCNode.h"
+i"CCCamera.h"
+i"ccTypes.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCLabelAtlas.h
+c000000004D9284EB0000000000000B24
+t1301447915
+s2852
+i"CCAtlasNode.h"
+i"CCTextureAtlas.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCLabelBMFont.h
+c000000004D9284EB0000000000001641
+t1301447915
+s5697
+i"CCSpriteBatchNode.h"
+i"Support/uthash.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCLabelTTF.h
+c000000004D9284EB0000000000000A87
+t1301447915
+s2695
+i"CCTexture2D.h"
+i"CCSprite.h"
+i"Platforms/CCNS.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCLayer.h
+c000000004D9284EB00000000000020E9
+t1301447915
+s8425
+i<Availability.h>
+i<UIKit/UIKit.h>
+i"Platforms/iOS/CCTouchDelegateProtocol.h"
+i"Platforms/Mac/CCEventDispatcher.h"
+i"CCProtocols.h"
+i"CCNode.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCMenu.h
+c000000004D9284EB0000000000000B29
+t1301447915
+s2857
+i"CCMenuItem.h"
+i"CCLayer.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCMenuItem.h
+c000000004D9284EB00000000000033A8
+t1301447915
+s13224
+i"CCBlockSupport.h"
+i"CCNode.h"
+i"CCProtocols.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCMotionStreak.h
+c000000004D9284EB0000000000000B2A
+t1301447915
+s2858
+i<Foundation/Foundation.h>
+i"CCNode.h"
+i"CCRibbon.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCNode.h
+c000000004D9284EB0000000000004485
+t1301447915
+s17541
+i<Availability.h>
+i"Platforms/CCGL.h"
+i"CCAction.h"
+i"ccTypes.h"
+i"CCTexture2D.h"
+i"CCProtocols.h"
+i"ccConfig.h"
+i"Support/CCArray.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCParallaxNode.h
+c000000004D9284EB000000000000075D
+t1301447915
+s1885
+i"CCNode.h"
+i"Support/ccCArray.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCParticleExamples.h
+c000000004D9284EB0000000000000AD0
+t1301447915
+s2768
+i<Availability.h>
+i"CCParticleSystemPoint.h"
+i"CCParticleSystemQuad.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCParticleSystem.h
+c000000004D9284EB00000000000037B8
+t1301447915
+s14264
+i"CCProtocols.h"
+i"CCNode.h"
+i"ccTypes.h"
+i"ccConfig.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCParticleSystemPoint.h
+c000000004D9284EB0000000000000846
+t1301447915
+s2118
+i<Availability.h>
+i"CCParticleSystem.h"
+i"CCParticleSystemQuad.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCParticleSystemQuad.h
+c000000004D9284EB00000000000009F8
+t1301447915
+s2552
+i"CCParticleSystem.h"
+i"ccConfig.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCProgressTimer.h
+c000000004D9284EB0000000000000B48
+t1301447915
+s2888
+i<Foundation/Foundation.h>
+i"CCSprite.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCProtocols.h
+c000000004D9284EB0000000000000F9A
+t1301447915
+s3994
+i"ccTypes.h"
+i"CCTexture2D.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCRenderTexture.h
+c000000004D9284EB0000000000000F2A
+t1301447915
+s3882
+i<Foundation/Foundation.h>
+i"CCNode.h"
+i"CCSprite.h"
+i"Support/OpenGL_Internal.h"
+i<Availability.h>
+i<UIKit/UIKit.h>
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCRibbon.h
+c000000004D9284EB0000000000000FCD
+t1301447915
+s4045
+i"CCNode.h"
+i"CCTexture2D.h"
+i"CCProtocols.h"
+i"Platforms/CCGL.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCScene.h
+c000000004D9284EB0000000000000676
+t1301447915
+s1654
+i"CCNode.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCScheduler.h
+c000000004D9284EB00000000000019D7
+t1301447915
+s6615
+i"Support/uthash.h"
+i"ccTypes.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCSprite.h
+c000000004D9284EB000000000000345C
+t1301447915
+s13404
+i"CCNode.h"
+i"CCProtocols.h"
+i"CCTextureAtlas.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCSpriteBatchNode.h
+c000000004D9284EB00000000000018F8
+t1301447915
+s6392
+i"CCNode.h"
+i"CCProtocols.h"
+i"CCTextureAtlas.h"
+i"ccMacros.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCSpriteFrame.h
+c000000004D9284EB0000000000000D5A
+t1301447915
+s3418
+i<Foundation/Foundation.h>
+i"CCNode.h"
+i"CCProtocols.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCSpriteFrameCache.h
+c000000004D9284EB0000000000001394
+t1301447915
+s5012
+i<Foundation/Foundation.h>
+i"CCSpriteFrame.h"
+i"CCTexture2D.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCSpriteSheet.h
+c000000004D9284EB00000000000009FE
+t1301447915
+s2558
+i"CCSpriteBatchNode.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCTMXLayer.h
+c000000004D9284EB000000000000182A
+t1301447915
+s6186
+i"CCAtlasNode.h"
+i"CCSpriteBatchNode.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCTMXObjectGroup.h
+c000000004D9284EB00000000000008D5
+t1301447915
+s2261
+i"CCSpriteSheet.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCTMXTiledMap.h
+c000000004D9284EB00000000000014D4
+t1301447915
+s5332
+i"CCSpriteSheet.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCTMXXMLParser.h
+c000000004D9284EB00000000000016B9
+t1301447915
+s5817
+i<Availability.h>
+i<Foundation/Foundation.h>
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCTexture2D.h
+c000000004D9284EB0000000000002C9A
+t1301447915
+s11418
+i<Availability.h>
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+i"Platforms/CCGL.h"
+i"Platforms/CCNS.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCTextureAtlas.h
+c000000004D9284EB000000000000145B
+t1301447915
+s5211
+i"CCTexture2D.h"
+i"ccTypes.h"
+i"ccConfig.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCTextureCache.h
+c000000004D9284EB00000000000014C2
+t1301447915
+s5314
+i<Availability.h>
+i<CoreGraphics/CGImage.h>
+i<Foundation/Foundation.h>
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCTexturePVR.h
+c000000004D9284EB0000000000000FB9
+t1301447915
+s4025
+i<Foundation/Foundation.h>
+i"Platforms/CCGL.h"
+i"CCTextureCache.h"
+i"CCTexture2D.h"
+i"ccCArray.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCTileMapAtlas.h
+c000000004D9284EB0000000000000B86
+t1301447915
+s2950
+i"CCTextureAtlas.h"
+i"CCAtlasNode.h"
+i"Support/TGAlib.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCTransition.h
+c000000004D9284EB0000000000002134
+t1301447915
+s8500
+i"CCScene.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCTransitionPageTurn.h
+c000000004D9284EB0000000000000917
+t1301447915
+s2327
+i"CCTransition.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/CCTransitionRadial.h
+c000000004D9284EB0000000000000630
+t1301447915
+s1584
+i"CCTransition.h"
+i"CCProgressTimer.h"
+i"CCActionProgressTimer.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/Platforms/CCGL.h
+c000000004D9284EB0000000000000BF8
+t1301447915
+s3064
+i<Availability.h>
+i<OpenGLES/ES1/gl.h>
+i<OpenGLES/ES1/glext.h>
+i<OpenGLES/EAGL.h>
+i"iOS/glu.h"
+i"iOS/EAGLView.h"
+i<OpenGL/gl.h>
+i<OpenGL/glu.h>
+i<Cocoa/Cocoa.h>
+i"Mac/MacGLView.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/Platforms/CCNS.h
+c000000004D9284EB0000000000000965
+t1301447915
+s2405
+i<Availability.h>
+i<Foundation/Foundation.h>
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/Platforms/Mac/CCDirectorMac.h
+c000000004D9284EB0000000000000C84
+t1301447915
+s3204
+i<Availability.h>
+i<QuartzCore/CVDisplayLink.h>
+i"../../CCDirector.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/Platforms/Mac/CCEventDispatcher.h
+c000000004D9284EB0000000000001AA7
+t1301447915
+s6823
+i<Availability.h>
+i<Cocoa/Cocoa.h>
+i"MacGLView.h"
+i"../../Support/uthash.h"
+i"../../Support/utlist.h"
+i"../../ccConfig.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/Platforms/Mac/MacGLView.h
+c000000004D9284EB0000000000000B8C
+t1301447915
+s2956
+i<Availability.h>
+i<Cocoa/Cocoa.h>
+i"../../ccConfig.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/Platforms/iOS/CCDirectorIOS.h
+c000000004D9284EB0000000000002B53
+t1301447915
+s11091
+i<Availability.h>
+i"../../CCDirector.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/Platforms/iOS/CCTouchDelegateProtocol.h
+c000000004D9284EB0000000000000BC3
+t1301447915
+s3011
+i<Availability.h>
+i<UIKit/UIKit.h>
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/Platforms/iOS/CCTouchDispatcher.h
+c000000004D9284EB00000000000010CA
+t1301447915
+s4298
+i<Availability.h>
+i"CCTouchDelegateProtocol.h"
+i"EAGLView.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/Platforms/iOS/CCTouchHandler.h
+c000000004D9284EB0000000000000D99
+t1301447915
+s3481
+i<Availability.h>
+i"CCTouchDelegateProtocol.h"
+i"CCTouchDispatcher.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/Platforms/iOS/EAGLView.h
+c000000004D9284EB0000000000001B69
+t1301447915
+s7017
+i<Availability.h>
+i<UIKit/UIKit.h>
+i<OpenGLES/EAGL.h>
+i<OpenGLES/EAGLDrawable.h>
+i<OpenGLES/ES1/gl.h>
+i<OpenGLES/ES1/glext.h>
+i"ESRenderer.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/Platforms/iOS/ESRenderer.h
+c000000004D9284EB000000000000083A
+t1301447915
+s2106
+i<Availability.h>
+i<QuartzCore/QuartzCore.h>
+i<OpenGLES/EAGL.h>
+i<OpenGLES/EAGLDrawable.h>
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/Platforms/iOS/glu.h
+c000000004D9284EB000000000000030D
+t1301447915
+s781
+i<Availability.h>
+i<OpenGLES/ES1/gl.h>
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/Support/CCArray.h
+c000000004D9284EB0000000000000BED
+t1301447915
+s3053
+i"ccCArray.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/Support/CCFileUtils.h
+c000000004D9284EB00000000000007E8
+t1301447915
+s2024
+i<Foundation/Foundation.h>
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/Support/CCProfiling.h
+c000000004D9284EB00000000000006E9
+t1301447915
+s1769
+i<Foundation/Foundation.h>
+i<sys/time.h>
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/Support/CGPointExtension.h
+c000000004D9284EB0000000000001EAB
+t1301447915
+s7851
+i<Availability.h>
+i<CoreGraphics/CGGeometry.h>
+i<Foundation/Foundation.h>
+i<math.h>
+i<objc/objc.h>
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/Support/OpenGL_Internal.h
+c000000004D9284EB00000000000011A7
+t1301447915
+s4519
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/Support/TGAlib.h
+c000000004D9284EB0000000000000444
+t1301447915
+s1092
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/Support/ccCArray.h
+c000000004D9284EB00000000000030F3
+t1301447915
+s12531
+i<Foundation/Foundation.h>
+i<stdlib.h>
+i<string.h>
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/Support/ccUtils.h
+c000000004D9284EB0000000000000204
+t1301447915
+s516
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/Support/uthash.h
+c000000004D9284EB000000000000FB13
+t1301447915
+s64275
+i<string.h>
+i<stddef.h>
+i<inttypes.h>
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/Support/utlist.h
+c000000004D9284EB0000000000009091
+t1301447915
+s37009
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/ccConfig.h
+c000000004D9284EB0000000000002896
+t1301447915
+s10390
+i<Availability.h>
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/ccMacros.h
+c000000004D9284EB0000000000001DFE
+t1301447915
+s7678
+i<math.h>
+i"ccConfig.h"
+i<Foundation/Foundation.h>
+i<Availability.h>
+i"Platforms/iOS/CCDirectorIOS.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/ccTypes.h
+c000000004D9284EB00000000000016D2
+t1301447915
+s5842
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<CoreGraphics/CGGeometry.h>
+i"Platforms/CCGL.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/libs/cocos2d/cocos2d.h
+c000000004D9284EB00000000000010FF
+t1301447915
+s4351
+i<Availability.h>
+i"ccConfig.h"
+i"CCActionManager.h"
+i"CCAction.h"
+i"CCActionInstant.h"
+i"CCActionInterval.h"
+i"CCActionEase.h"
+i"CCActionCamera.h"
+i"CCActionTween.h"
+i"CCActionEase.h"
+i"CCActionTiledGrid.h"
+i"CCActionGrid3D.h"
+i"CCActionGrid.h"
+i"CCActionProgressTimer.h"
+i"CCActionPageTurn3D.h"
+i"CCAnimation.h"
+i"CCAnimationCache.h"
+i"CCSprite.h"
+i"CCSpriteFrame.h"
+i"CCSpriteSheet.h"
+i"CCSpriteBatchNode.h"
+i"CCSpriteFrameCache.h"
+i"CCLabelTTF.h"
+i"CCLabelBMFont.h"
+i"CCLabelAtlas.h"
+i"CCParticleSystem.h"
+i"CCParticleSystemPoint.h"
+i"CCParticleSystemQuad.h"
+i"CCParticleExamples.h"
+i"CCTexture2D.h"
+i"CCTexturePVR.h"
+i"CCTextureCache.h"
+i"CCTextureAtlas.h"
+i"CCTransition.h"
+i"CCTransitionPageTurn.h"
+i"CCTransitionRadial.h"
+i"CCTMXTiledMap.h"
+i"CCTMXLayer.h"
+i"CCTMXObjectGroup.h"
+i"CCTMXXMLParser.h"
+i"CCTileMapAtlas.h"
+i"CCLayer.h"
+i"CCMenu.h"
+i"CCMenuItem.h"
+i"CCDrawingPrimitives.h"
+i"CCScene.h"
+i"CCScheduler.h"
+i"CCBlockSupport.h"
+i"CCCamera.h"
+i"CCProtocols.h"
+i"CCNode.h"
+i"CCDirector.h"
+i"CCAtlasNode.h"
+i"CCGrabber.h"
+i"CCGrid.h"
+i"CCParallaxNode.h"
+i"CCRenderTexture.h"
+i"CCMotionStreak.h"
+i"CCConfiguration.h"
+i"ccTypes.h"
+i"ccMacros.h"
+i"Platforms/CCGL.h"
+i"Platforms/CCNS.h"
+i"Platforms/iOS/CCTouchDispatcher.h"
+i"Platforms/iOS/CCTouchDelegateProtocol.h"
+i"Platforms/iOS/CCTouchHandler.h"
+i"Platforms/iOS/EAGLView.h"
+i"Platforms/iOS/CCDirectorIOS.h"
+i"Platforms/Mac/MacGLView.h"
+i"Platforms/Mac/CCDirectorMac.h"
+i"Support/OpenGL_Internal.h"
+i"Support/CCFileUtils.h"
+i"Support/CGPointExtension.h"
+i"Support/ccCArray.h"
+i"Support/CCArray.h"
+i"Support/ccUtils.h"
+i"Support/CCProfiling.h"
+i"CCCompatibility.h"
+
+N/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/main.m
+c000000004D9284EB0000000000000168
+t1301447915
+s360
+i<UIKit/UIKit.h>
+
+N/var/folders/sK/sKZINlQEF-CThSEyIOYiHU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CogConnect_Prefix-gnygkdtawxkyugasohfyvjaochza/CogConnect_Prefix.pch.gch
+t1301447943
+s11971792
+
+NResources/Info.plist
+c000000004D9284EB0000000000000515
+t1301447915
+s1301
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies323220436#323220436#0(0"0(0#1#0"8616824032#0"0#
+
+CCompileC build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/Cog.o "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/Cog.m" normal i386 objective-c com.apple.compilers.llvmgcc42
+s323143008.372301
+e323143008.636652
+r1
+xCompileC
+xbuild/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/Cog.o
+x/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/Cog.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+o/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/Cog.m: In function '-[Cog draw]':
+o/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/Cog.m:57: warning: unused variable 'circleCenter'
+lSLF07#2@89"Compile /Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/Cog.m323143008#323143008#0(236"/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/Cog.m: In function '-[Cog draw]':/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/Cog.m:57: warning: unused variable 'circleCenter'1(22@30"Unused variable 'circleCenter'323143008#110#126#0(6@81"/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/Cog.m323143006#57#0#57#0#19"unused variable '*'0(0#0#81"/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/Cog.m8629829248#2527"    cd "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-generated-files.hmap" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-own-target-headers.hmap" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-all-target-headers.hmap" -iquote "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-project-headers.hmap" -Wall "-F/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/include" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/DerivedSources/i386" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/DerivedSources" -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -include /var/folders/sK/sKZINlQEF-CThSEyIOYiHU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CogConnect_Prefix-gnygkdtawxkyugasohfyvjaochza/CogConnect_Prefix.pch -c "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/Cog.m" -o "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/Cog.o"0#
+
+CCompileC build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/CogConnectAppDelegate.o "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/CogConnectAppDelegate.m" normal i386 objective-c com.apple.compilers.llvmgcc42
+s323220436.610224
+e323220436.834486
+r1
+xCompileC
+xbuild/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/CogConnectAppDelegate.o
+x/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/CogConnectAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@107"Compile /Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/CogConnectAppDelegate.m323220436#323220436#0(0"0(0#0#99"/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/CogConnectAppDelegate.m8616773440#2563"    cd "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-generated-files.hmap" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-own-target-headers.hmap" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-all-target-headers.hmap" -iquote "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-project-headers.hmap" -Wall "-F/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/include" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/DerivedSources/i386" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/DerivedSources" -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -include /var/folders/sK/sKZINlQEF-CThSEyIOYiHU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CogConnect_Prefix-gnygkdtawxkyugasohfyvjaochza/CogConnect_Prefix.pch -c "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/CogConnectAppDelegate.m" -o "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/CogConnectAppDelegate.o"0#
+
+CCompileC build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/HelloWorldScene.o "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/HelloWorldScene.m" normal i386 objective-c com.apple.compilers.llvmgcc42
+s323220436.611654
+e323220436.782488
+r1
+xCompileC
+xbuild/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/HelloWorldScene.o
+x/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/HelloWorldScene.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@101"Compile /Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/HelloWorldScene.m323220436#323220436#0(0"0(0#0#93"/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/HelloWorldScene.m8616735456#2551"    cd "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-generated-files.hmap" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-own-target-headers.hmap" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-all-target-headers.hmap" -iquote "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-project-headers.hmap" -Wall "-F/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/include" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/DerivedSources/i386" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/DerivedSources" -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -include /var/folders/sK/sKZINlQEF-CThSEyIOYiHU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CogConnect_Prefix-gnygkdtawxkyugasohfyvjaochza/CogConnect_Prefix.pch -c "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/HelloWorldScene.m" -o "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/HelloWorldScene.o"0#
+
+CCompileC build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/RootViewController.o "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/RootViewController.m" normal i386 objective-c com.apple.compilers.llvmgcc42
+s323142695.611244
+e323142695.803754
+r1
+xCompileC
+xbuild/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/RootViewController.o
+x/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/RootViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@104"Compile /Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/RootViewController.m323142695#323142695#0(0"0(0#0#96"/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/RootViewController.m8621356160#2557"    cd "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-generated-files.hmap" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-own-target-headers.hmap" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-all-target-headers.hmap" -iquote "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-project-headers.hmap" -Wall "-F/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/include" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/DerivedSources/i386" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/DerivedSources" -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -include /var/folders/sK/sKZINlQEF-CThSEyIOYiHU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CogConnect_Prefix-gnygkdtawxkyugasohfyvjaochza/CogConnect_Prefix.pch -c "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Classes/RootViewController.m" -o "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/RootViewController.o"0#
+
+CCompileC build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/main.o "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/main.m" normal i386 objective-c com.apple.compilers.llvmgcc42
+s323140743.451667
+e323140743.524130
+r1
+xCompileC
+xbuild/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/main.o
+x/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@82"Compile /Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/main.m323140743#323140743#0(0"0(0#0#74"/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/main.m8605610048#2521"    cd "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-generated-files.hmap" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-own-target-headers.hmap" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-all-target-headers.hmap" -iquote "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-project-headers.hmap" -Wall "-F/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/include" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/DerivedSources/i386" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/DerivedSources" -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -include /var/folders/sK/sKZINlQEF-CThSEyIOYiHU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CogConnect_Prefix-gnygkdtawxkyugasohfyvjaochza/CogConnect_Prefix.pch -c "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/main.m" -o "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/main.o"0#
+
+CCpResource build/Debug-iphonesimulator/CogConnect.app/Default.png Resources/Default.png
+s323140742.599920
+e323140742.647249
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/CogConnect.app/Default.png
+xResources/Default.png
+lSLF07#2@26"Copy Resources/Default.png323140742#323140742#0(0"0(0#0#89"/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/Default.png8603360288#637"    cd "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/Default.png" "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app"0#
+
+CCpResource build/Debug-iphonesimulator/CogConnect.app/Icon-72.png Resources/Icon-72.png
+s323140742.610766
+e323140742.651396
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/CogConnect.app/Icon-72.png
+xResources/Icon-72.png
+lSLF07#2@26"Copy Resources/Icon-72.png323140742#323140742#0(0"0(0#0#89"/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/Icon-72.png8601911008#637"    cd "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/Icon-72.png" "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app"0#
+
+CCpResource build/Debug-iphonesimulator/CogConnect.app/Icon-Small-50.png Resources/Icon-Small-50.png
+s323140742.609950
+e323140742.650555
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/CogConnect.app/Icon-Small-50.png
+xResources/Icon-Small-50.png
+lSLF07#2@32"Copy Resources/Icon-Small-50.png323140742#323140742#0(0"0(0#0#95"/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/Icon-Small-50.png8602478496#643"    cd "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/Icon-Small-50.png" "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app"0#
+
+CCpResource build/Debug-iphonesimulator/CogConnect.app/Icon-Small.png Resources/Icon-Small.png
+s323140742.606474
+e323140742.644061
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/CogConnect.app/Icon-Small.png
+xResources/Icon-Small.png
+lSLF07#2@29"Copy Resources/Icon-Small.png323140742#323140742#0(0"0(0#0#92"/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/Icon-Small.png8605604704#640"    cd "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/Icon-Small.png" "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app"0#
+
+CCpResource build/Debug-iphonesimulator/CogConnect.app/Icon-Small@2x.png Resources/Icon-Small@2x.png
+s323140742.605537
+e323140742.650098
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/CogConnect.app/Icon-Small@2x.png
+xResources/Icon-Small@2x.png
+lSLF07#2@32"Copy Resources/Icon-Small@2x.png323140742#323140742#0(0"0(0#0#95"/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/Icon-Small@2x.png8605655936#643"    cd "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/Icon-Small@2x.png" "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app"0#
+
+CCpResource build/Debug-iphonesimulator/CogConnect.app/Icon.png Resources/Icon.png
+s323140742.602911
+e323140742.652123
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/CogConnect.app/Icon.png
+xResources/Icon.png
+lSLF07#2@23"Copy Resources/Icon.png323140742#323140742#0(0"0(0#0#86"/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/Icon.png8607883296#634"    cd "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/Icon.png" "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app"0#
+
+CCpResource build/Debug-iphonesimulator/CogConnect.app/Icon@2x.png Resources/Icon@2x.png
+s323140742.603741
+e323140742.655897
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/CogConnect.app/Icon@2x.png
+xResources/Icon@2x.png
+lSLF07#2@26"Copy Resources/Icon@2x.png323140742#323140742#0(0"0(0#0#89"/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/Icon@2x.png8607844352#637"    cd "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/Icon@2x.png" "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app"0#
+
+CCpResource build/Debug-iphonesimulator/CogConnect.app/fps_images.png Resources/fps_images.png
+s323140742.601537
+e323140742.653120
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/CogConnect.app/fps_images.png
+xResources/fps_images.png
+lSLF07#2@29"Copy Resources/fps_images.png323140742#323140742#0(0"0(0#0#92"/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/fps_images.png8601352704#640"    cd "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/fps_images.png" "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app"0#
+
+CCpResource build/Debug-iphonesimulator/CogConnect.app/iTunesArtwork Resources/iTunesArtwork
+s323140742.611446
+e323140742.653830
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/CogConnect.app/iTunesArtwork
+xResources/iTunesArtwork
+lSLF07#2@28"Copy Resources/iTunesArtwork323140742#323140742#0(0"0(0#0#91"/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/iTunesArtwork8601668928#639"    cd "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/iTunesArtwork" "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app"0#
+
+CGenerateDSYMFile "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app.dSYM" "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/CogConnect"
+s323220437.878442
+e323220438.130799
+r1
+xGenerateDSYMFile
+x/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app.dSYM
+x/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/CogConnect
+lSLF07#2@118"GenerateDSYMFile build/Debug-iphonesimulator/CogConnect.app.dSYM build/Debug-iphonesimulator/CogConnect.app/CogConnect323220437#323220438#0(0"0(0#0#121"/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/CogConnect8608711040#547"    cd "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/CogConnect" -o "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app.dSYM"0#
+
+CLd "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/CogConnect" normal i386
+s323220436.834579
+e323220437.878338
+r1
+xLd
+x/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/CogConnect
+xnormal
+xi386
+lSLF07#2@126"Link /Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/CogConnect323220436#323220437#0(0"0(0#0#0"8616962560#1287"    cd "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk "-L/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator" "-F/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator" -filelist "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/Objects-normal/i386/CogConnect.LinkFileList" -mmacosx-version-min=10.6 -all_load -ObjC -Xlinker -objc_abi_version -Xlinker 2 -framework CoreGraphics -framework Foundation -framework OpenGLES -framework QuartzCore -framework UIKit -framework AudioToolbox -framework OpenAL -lz -framework AVFoundation "-lcocos2d libraries" -o "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/CogConnect"0#
+
+CProcessInfoPlistFile "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/Info.plist" Resources/Info.plist
+s323140742.592871
+e323140742.599806
+r1
+xProcessInfoPlistFile
+x/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/Info.plist
+xResources/Info.plist
+lSLF07#2@28"Process Resources/Info.plist323140742#323140742#0(0"0(0#0#88"/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/Resources/Info.plist8605311808#642"    cd "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    builtin-infoPlistUtility Resources/Info.plist -genpkginfo "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app/Info.plist"0#
+
+CProcessPCH /var/folders/sK/sKZINlQEF-CThSEyIOYiHU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CogConnect_Prefix-gnygkdtawxkyugasohfyvjaochza/CogConnect_Prefix.pch.gch CogConnect_Prefix.pch normal i386 objective-c com.apple.compilers.llvmgcc42
+s323140742.656032
+e323140743.451558
+r1
+xProcessPCH
+x/var/folders/sK/sKZINlQEF-CThSEyIOYiHU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CogConnect_Prefix-gnygkdtawxkyugasohfyvjaochza/CogConnect_Prefix.pch.gch
+xCogConnect_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@32"Precompile CogConnect_Prefix.pch323140742#323140743#0(0"0(0#0#89"/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/CogConnect_Prefix.pch8599953568#2379"    cd "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-generated-files.hmap" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-own-target-headers.hmap" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-all-target-headers.hmap" -iquote "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/CogConnect-project-headers.hmap" -Wall "-F/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/include" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/DerivedSources/i386" "-I/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/CogConnect.build/Debug-iphonesimulator/CogConnect.build/DerivedSources" -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -c "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/CogConnect_Prefix.pch" -o /var/folders/sK/sKZINlQEF-CThSEyIOYiHU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CogConnect_Prefix-gnygkdtawxkyugasohfyvjaochza/CogConnect_Prefix.pch.gch0#
+
+CTouch "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app"
+s323220438.131014
+e323220438.147729
+r1
+xTouch
+x/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app
+lSLF07#2@116"Touch /Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app323220438#323220438#0(0"0(0#0#0"8617376992#405"    cd "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c "/Users/tedomeara/Documents/school/IS698/Mobile Rehab/app/CogConnect/build/Debug-iphonesimulator/CogConnect.app"0#
+
