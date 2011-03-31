@@ -10,7 +10,7 @@
 
 #import "CogConnectAppDelegate.h"
 #import "GameConfig.h"
-#import "HelloWorldScene.h"
+#import "GameScene.h"
 #import "RootViewController.h"
 
 @implementation CogConnectAppDelegate
@@ -110,7 +110,7 @@
 	[self removeStartupFlicker];
 	
 	// Run the intro Scene
-	[[CCDirector sharedDirector] runWithScene: [HelloWorld scene]];		
+	[[CCDirector sharedDirector] runWithScene: [GameScene scene]];		
 }
 
 
