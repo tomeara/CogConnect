@@ -11,8 +11,10 @@
 
 @interface GameScene : CCLayer {
 	CCSprite *_button;
-	NSSet *_points;
 	float _buttonHeight;
+	CGSize _screenSize;
+	int _timer;
+	float _buttonScale;
 }
 
 +(id) scene;
