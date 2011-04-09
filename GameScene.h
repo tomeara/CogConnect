@@ -11,6 +11,7 @@
 
 @interface GameScene : CCLayer {
 	CCSprite *button;
+	NSSet *points;
 }
 
 +(id) scene;

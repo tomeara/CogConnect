@@ -30,21 +30,34 @@
 		button.position = CGPointMake(screenSize.width / 2, screenSize.height /2);
 		CCMoveTo *move = [CCMoveTo actionWithDuration:5 position:CGPointMake(screenSize.width - imageHeight, screenSize.height - imageHeight)];
 		[button runAction:move];
-		//self.isTouchEnabled = YES;
+		self.isTouchEnabled = YES;
 	}
 	return self;
 }
-/*
+
 -(void) registerWithTouchDispatcher{
-	[[CCTouchDispatcher sharedDispatcher] addTargetedDelegate:self priority:INT_MIN+1 swallowsTouches:YES];
+	[[CCTouchDispatcher sharedDispatcher] addTargetedDelegate:self priority:0 swallowsTouches:YES];
 }
 
-- (CGPoint) locationFromTouches:(NSSet *)touches{
-	UITouch	*touch = [touches anyObject];
-	CGPoint	touchLocation = [touch locationInView: [touch view]];
-	return [[CCDirector sharedDirector] convertToGL:touchLocation];
+-(BOOL) ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
+	CCLOG(@"Touch Began");
+	return YES;
 }
-*/
+
+-(void) ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event{
+	CGPoint touchLocation = [touch locationInView: [touch view]];		
+	touchLocation = [[CCDirector sharedDirector] convertToGL: touchLocation];
+	touchLocation = [self convertToNodeSpace:touchLocation];
+	CCLOG(@"Touch Ended");
+}
+
+-(void) ccTouchMoved:(UITouch *)touch withEvent:(UIEvent *)event{
+	CGPoint touchLocation = [touch locationInView: [touch view]];		
+	touchLocation = [[CCDirector sharedDirector] convertToGL: touchLocation];
+	touchLocation = [self convertToNodeSpace:touchLocation];
+	CCLOG(@"Touch Moving");
+}
+
 -(void) dealloc{
 	CCLOG(@"%@: %@", NSStringFromSelector(_cmd), self);
 	[super dealloc];
