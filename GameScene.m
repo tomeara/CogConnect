@@ -11,6 +11,7 @@
 
 @implementation GameScene
 
+
 +(id) scene{
 	CCScene *scene = [CCScene node];
 	CCLayer	*layer = [GameScene node];
@@ -22,14 +23,14 @@
 	if((self == [super init])){
 		CCLOG(@"%@: %@", NSStringFromSelector(_cmd), self);
 		
-		button = [CCSprite spriteWithFile:@"button.png"];
-		[self addChild:button z:0 tag:1];
+		_button = [CCSprite spriteWithFile:@"button.png"];
+		[self addChild:_button z:0 tag:1];
 		
 		CGSize screenSize = [[CCDirector sharedDirector] winSize];
-		float imageHeight = [button texture].contentSize.height;
-		button.position = CGPointMake(screenSize.width / 2, screenSize.height /2);
-		CCMoveTo *move = [CCMoveTo actionWithDuration:5 position:CGPointMake(screenSize.width - imageHeight, screenSize.height - imageHeight)];
-		[button runAction:move];
+		_buttonHeight = [_button texture].contentSize.height;
+		_button.position = CGPointMake(screenSize.width / 2, screenSize.height /2);
+		CCMoveTo *move = [CCMoveTo actionWithDuration:5 position:CGPointMake(screenSize.width - _buttonHeight, screenSize.height - _buttonHeight)];
+		[_button runAction:move];
 		self.isTouchEnabled = YES;
 	}
 	return self;
@@ -55,7 +56,20 @@
 	CGPoint touchLocation = [touch locationInView: [touch view]];		
 	touchLocation = [[CCDirector sharedDirector] convertToGL: touchLocation];
 	touchLocation = [self convertToNodeSpace:touchLocation];
-	CCLOG(@"Touch Moving");
+	CCLOG(@"Button: %@ | Touch: %@", NSStringFromCGPoint(_button.position), NSStringFromCGPoint(touchLocation));
+	//CGPoint moveDifference = ccpSub(touchLocation, _button.position);
+	if(
+	   (touchLocation.y < _button.position.y+(_buttonHeight*.5))&&
+	   (touchLocation.x < _button.position.x+(_buttonHeight*.5))&&
+	   (touchLocation.y > _button.position.y-(_buttonHeight*.5))&&
+	   (touchLocation.x > _button.position.x-(_buttonHeight*.5))
+	){
+		CCLOG(@"You are inside.");
+		_button.color = ccRED;
+	}else {
+		_button.color = ccBLUE;
+	}
+
 }
 
 -(void) dealloc{

@@ -10,8 +10,9 @@
 #import "cocos2d.h"
 
 @interface GameScene : CCLayer {
-	CCSprite *button;
-	NSSet *points;
+	CCSprite *_button;
+	NSSet *_points;
+	float _buttonHeight;
 }
 
 +(id) scene;
