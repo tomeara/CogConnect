@@ -18,4 +18,5 @@
 }
 
 +(id) scene;
+-(CGPoint) getRandomPointOnScreen;
 @end

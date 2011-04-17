@@ -111,6 +111,15 @@
 
 }
 
+-(CGPoint) getRandomPointOnScreen{
+	
+	CGFloat randomX = arc4random() % (int) _screenSize.width;
+	CGFloat randomY = arc4random() % (int) _screenSize.height;
+	CGPoint randomPoint = ccp(abs(randomX), abs(randomY));
+	CCLOG(@"x: %f, y: %f", randomX, randomY);
+	return randomPoint;
+}
+
 -(void) dealloc{
 	CCLOG(@"%@: %@", NSStringFromSelector(_cmd), self);
 	[super dealloc];
