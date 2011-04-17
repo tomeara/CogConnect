@@ -15,6 +15,9 @@
 	CGSize _screenSize;
 	int _timer;
 	float _buttonScale;
+	id _rep;
+	CCLabelTTF *_timeLabel;
+	bool _started;
 }
 
 +(id) scene;
