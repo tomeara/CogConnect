@@ -55,29 +55,21 @@
 		//Bezier Curve Simulation
 		
 		//You can choose the two control point location as well as the endposition location as the way you wish.
-		ccBezierConfig bezier;
-		int i;
-		int bezierTotalPoints = 3;
+		//cpShape *square = [smgr addPolyAt:cpv(240,160) mass:100 rotation:0 numPoints:4 points:cpv(0, -10), cpv(10, 0), cpv(0, 10), cpv(-10, 0)];
+		//int bezierTotalPoints = 3;
 		
-		for (i=0; i < bezierTotalPoints; i++) {
-			CGFloat randomY = (CGFloat) random()/(CGFloat) RAND_MAX * (_screenSize.width/2);
-			CGFloat randomX = (CGFloat) random()/(CGFloat) RAND_MAX * (_screenSize.width/2);
-			bezier.controlPoint_1 = ccp(randomX, randomY);
-		}
-		CGFloat randomEndX = (CGFloat) random()/(CGFloat) RAND_MAX * (_screenSize.width/2);
-		CGFloat randomEndY = (CGFloat) random()/(CGFloat) RAND_MAX * (_screenSize.width/2);
+		id ballMove1 = [CCMoveTo actionWithDuration:3 position:[self getRandomPointOnScreen]];
+		id ballMove2 = [CCMoveTo actionWithDuration:3 position:[self getRandomPointOnScreen]];
+		id ballMove3 = [CCMoveTo actionWithDuration:3 position:[self getRandomPointOnScreen]];
+		id ballMove4 = [CCMoveTo actionWithDuration:3 position:_button.position];
 		
-		bezier.endPosition = ccp(randomEndX, randomEndY);
-		id bezierForward = [CCBezierBy actionWithDuration:bezierTotalPoints bezier:bezier];
-		id bezierBack = [bezierForward reverse];
-		//CCEaseBounceOut *bounce=[CCEaseBounceIn actionWithAction:bezierForward];
-		id seq = [CCSequence actions: bezierForward, bezierBack, nil];
+		id seq = [CCSequence actions: ballMove1, ballMove2, ballMove3, ballMove4, nil];
 		
-		id rep = [CCRepeatForever actionWithAction:seq];
+		_rep = [CCRepeatForever actionWithAction:seq];
 		
-		//[target runAction:rep];
-		[_button runAction:rep];
+		[_button runAction:_rep];
 		CCLOG(@"Touch Began");
+		_started = YES;
 	}
 	return YES;
 }
