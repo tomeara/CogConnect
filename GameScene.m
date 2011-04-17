@@ -35,9 +35,38 @@
 		_screenSize = [[CCDirector sharedDirector] winSize];
 		_buttonHeight = [_button texture].pixelsHigh*_buttonScale;
 		_button.position = CGPointMake(_screenSize.width / 2, _screenSize.height /2);
+		CCLOG(@"height: %f, width: %f", _screenSize.height, _screenSize.width);
+		CCLOG(@"button height: %f", _buttonHeight);
+		
+		_timeLabel = [CCLabelTTF labelWithString:@"Hello World" fontName:@"Marker Felt" fontSize:24];
+		_timeLabel.position = CGPointMake(_screenSize.width / 2, _screenSize.height - 24);
+		[self addChild:_timeLabel];
+		
+		// schedule a callback
+        [self scheduleUpdate];  
+        [self schedule: @selector(tick2:) interval:1];
+		
+		
 		self.isTouchEnabled = YES;
 	}
 	return self;
+}
+
+-(void) update: (ccTime) dt
+{	
+	
+}
+
+-(void) tick2: (ccTime) dt
+{
+	if (_started == YES){
+		_timer --;
+		if (_timer > 0) {
+			[_timeLabel setString:[NSString stringWithFormat:@"Time left: %d", _timer]];
+		}else{
+			[_timeLabel setString:[NSString stringWithString:@"Time's Up!"]];
+		}
+	}
 }
 
 -(void) registerWithTouchDispatcher{
@@ -86,6 +115,7 @@
 	}else{
 		CCLOG(@"Fail");
 		_button.position = CGPointMake(_screenSize.width / 2, _screenSize.height /2);
+		[_timeLabel setString:[NSString stringWithString:@"FAIL!"]];
 	}
 }
 
@@ -99,6 +129,7 @@
 		_button.color = ccRED;
 	}else {
 		_button.color = ccBLUE;
+		[_timeLabel setString:[NSString stringWithString:@"FAIL!"]];
 	}
 
 }
