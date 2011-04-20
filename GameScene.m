@@ -25,7 +25,7 @@
 		
 		//Set game time and move time
 		_timer = 5;
-		_buttonScale = 3;
+		_buttonScale = .1;
 		
 		//Set the sprite
 		_button = [CCSprite spriteWithFile:@"button.png"];
@@ -36,7 +36,7 @@
 		_buttonHeight = [_button texture].pixelsHigh*_buttonScale;
 		_button.position = CGPointMake(_screenSize.width / 2, _screenSize.height /2);
 		CCLOG(@"height: %f, width: %f", _screenSize.height, _screenSize.width);
-		CCLOG(@"button height: %f", _buttonHeight);
+		CCLOG(@"button height: %d", _buttonHeight);
 		
 		_timeLabel = [CCLabelTTF labelWithString:@"Hello World" fontName:@"Marker Felt" fontSize:24];
 		_timeLabel.position = CGPointMake(_screenSize.width / 2, _screenSize.height - 24);
@@ -128,9 +128,9 @@
 	CGFloat touchDistance = ccpDistance(_button.position, touchLocation);
 	//CCLOG(@"Button: %@ | Touch: %@", NSStringFromCGPoint(_button.position), NSStringFromCGPoint(touchLocation));
 	if(touchDistance < _buttonHeight*.5){
-		_button.color = ccRED;
+		//_button.color = ccRED;
 	}else {
-		_button.color = ccBLUE;
+		//_button.color = ccBLUE;
 		[_timeLabel setString:[NSString stringWithString:@"FAIL!"]];
 	}
 
@@ -138,10 +138,10 @@
 
 -(CGPoint) getRandomPointOnScreen{
 	
-	CGFloat randomX = arc4random() % (int) _screenSize.width;
-	CGFloat randomY = arc4random() % (int) _screenSize.height;
-	CGPoint randomPoint = ccp(abs(randomX), abs(randomY));
-	CCLOG(@"x: %f, y: %f", randomX, randomY);
+	int randomX = arc4random() % (((int) _screenSize.width)-_buttonHeight);
+	int randomY = arc4random() % (((int) _screenSize.height)-_buttonHeight);
+	CGPoint randomPoint = ccp(randomX+_buttonHeight/2, randomY+_buttonHeight/2);
+	CCLOG(@"x: %d, y: %d", randomX+_buttonHeight/2, randomY+_buttonHeight/2);
 	return randomPoint;
 }
 
