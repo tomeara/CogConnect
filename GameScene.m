@@ -74,31 +74,33 @@
 }
 
 -(BOOL) ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
-	CGPoint startTouch = [touch locationInView: touch.view];
-	startTouch = [[CCDirector sharedDirector] convertToGL: startTouch];
-	startTouch = [self convertToNodeSpace:startTouch];
-	
-	CGFloat touchDistance = ccpDistance(_button.position, startTouch);
-	if(touchDistance < _buttonHeight*.5){
-		//CCMoveTo *move = [CCMoveTo actionWithDuration:_timer position:CGPointMake(_screenSize.width - _buttonHeight, _screenSize.height - _buttonHeight)];
-		//Bezier Curve Simulation
+		if(!_started){
+		CGPoint startTouch = [touch locationInView: touch.view];
+		startTouch = [[CCDirector sharedDirector] convertToGL: startTouch];
+		startTouch = [self convertToNodeSpace:startTouch];
 		
-		//You can choose the two control point location as well as the endposition location as the way you wish.
-		//cpShape *square = [smgr addPolyAt:cpv(240,160) mass:100 rotation:0 numPoints:4 points:cpv(0, -10), cpv(10, 0), cpv(0, 10), cpv(-10, 0)];
-		//int bezierTotalPoints = 3;
-		
-		id ballMove1 = [CCMoveTo actionWithDuration:3 position:[self getRandomPointOnScreen]];
-		id ballMove2 = [CCMoveTo actionWithDuration:3 position:[self getRandomPointOnScreen]];
-		id ballMove3 = [CCMoveTo actionWithDuration:3 position:[self getRandomPointOnScreen]];
-		id ballMove4 = [CCMoveTo actionWithDuration:3 position:_button.position];
-		
-		id seq = [CCSequence actions: ballMove1, ballMove2, ballMove3, ballMove4, nil];
-		
-		_rep = [CCRepeatForever actionWithAction:seq];
-		
-		[_button runAction:_rep];
-		CCLOG(@"Touch Began");
-		_started = YES;
+		CGFloat touchDistance = ccpDistance(_button.position, startTouch);
+		if(touchDistance < _buttonHeight*.5){
+			//CCMoveTo *move = [CCMoveTo actionWithDuration:_timer position:CGPointMake(_screenSize.width - _buttonHeight, _screenSize.height - _buttonHeight)];
+			//Bezier Curve Simulation
+			
+			//You can choose the two control point location as well as the endposition location as the way you wish.
+			//cpShape *square = [smgr addPolyAt:cpv(240,160) mass:100 rotation:0 numPoints:4 points:cpv(0, -10), cpv(10, 0), cpv(0, 10), cpv(-10, 0)];
+			//int bezierTotalPoints = 3;
+			
+			id ballMove1 = [CCMoveTo actionWithDuration:3 position:[self getRandomPointOnScreen]];
+			id ballMove2 = [CCMoveTo actionWithDuration:3 position:[self getRandomPointOnScreen]];
+			id ballMove3 = [CCMoveTo actionWithDuration:3 position:[self getRandomPointOnScreen]];
+			id ballMove4 = [CCMoveTo actionWithDuration:3 position:_button.position];
+			
+			id seq = [CCSequence actions: ballMove1, ballMove2, ballMove3, ballMove4, nil];
+			
+			_rep = [CCRepeatForever actionWithAction:seq];
+			
+			[_button runAction:_rep];
+			CCLOG(@"Touch Began");
+			_started = YES;
+		}
 	}
 	return YES;
 }
