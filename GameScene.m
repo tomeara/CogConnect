@@ -96,6 +96,17 @@
 			id seq = [CCSequence actions: ballMove1, ballMove2, ballMove3, ballMove4, nil];
 			
 			_rep = [CCRepeatForever actionWithAction:seq];
+			id moveEase = [CCEaseInOut actionWithAction:seq rate:2];
+			
+			_rep = [CCRepeatForever actionWithAction:moveEase];
+			
+			[_buttonNode runAction:_rep];
+			
+			id cogRotate = [CCRotateBy actionWithDuration:5 angle:360];
+			
+			id cogRepeat = [CCRepeatForever actionWithAction:cogRotate];
+			
+			[_cog runAction:cogRepeat];
 			
 			[_button runAction:_rep];
 			CCLOG(@"Touch Began");
