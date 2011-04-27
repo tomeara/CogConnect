@@ -64,8 +64,12 @@
 		50F414F01069373D002A0D5E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414EC1069373D002A0D5E /* Default.png */; };
 		50F414F11069373D002A0D5E /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414ED1069373D002A0D5E /* fps_images.png */; };
 		50F414F21069373D002A0D5E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414EE1069373D002A0D5E /* Icon.png */; };
+		D8128B2E135BC93E00F2E32E /* Cog.m in Sources */ = {isa = PBXBuildFile; fileRef = D8128B2D135BC93E00F2E32E /* Cog.m */; };
 		D8CD5BC01344048800101466 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CD5BBF1344048800101466 /* GameScene.m */; };
 		D8CD5BD513440E3700101466 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = D8CD5BD413440E3700101466 /* button.png */; };
+		D8F1291413665FF100832DBF /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F1291213665FF100832DBF /* bg.png */; };
+		D8F1291513665FF100832DBF /* timer_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F1291313665FF100832DBF /* timer_bg.png */; };
+		D8F129B61366723100832DBF /* button_on.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F129B51366723100832DBF /* button_on.png */; };
 		DC6640030F83B3EA000B3E49 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */; };
 		DC6640050F83B3EA000B3E49 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640040F83B3EA000B3E49 /* OpenAL.framework */; };
 		DCCBF1B70F6022AE0040855A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCBF1B60F6022AE0040855A /* CoreGraphics.framework */; };
@@ -315,9 +319,14 @@
 		50F414ED1069373D002A0D5E /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
 		50F414EE1069373D002A0D5E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		50F414EF1069373D002A0D5E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8128B2C135BC93E00F2E32E /* Cog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cog.h; sourceTree = "<group>"; };
+		D8128B2D135BC93E00F2E32E /* Cog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cog.m; sourceTree = "<group>"; };
 		D8CD5BBE1344048800101466 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = ../GameScene.h; sourceTree = "<group>"; };
 		D8CD5BBF1344048800101466 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameScene.m; path = ../GameScene.m; sourceTree = "<group>"; };
 		D8CD5BD413440E3700101466 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = Images/button.png; sourceTree = SOURCE_ROOT; };
+		D8F1291213665FF100832DBF /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		D8F1291313665FF100832DBF /* timer_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timer_bg.png; sourceTree = "<group>"; };
+		D8F129B51366723100832DBF /* button_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_on.png; path = Images/button_on.png; sourceTree = SOURCE_ROOT; };
 		DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DC6640040F83B3EA000B3E49 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		DCCBF1B60F6022AE0040855A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -589,6 +598,8 @@
 		2D500B1D0D5A766B00DBA0E3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D8128B2C135BC93E00F2E32E /* Cog.h */,
+				D8128B2D135BC93E00F2E32E /* Cog.m */,
 				D8CD5BBE1344048800101466 /* GameScene.h */,
 				D8CD5BBF1344048800101466 /* GameScene.m */,
 				E0F80F5D120A0182005866B8 /* GameConfig.h */,
@@ -705,6 +716,9 @@
 		50F414EB1069373D002A0D5E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D8F129B51366723100832DBF /* button_on.png */,
+				D8F1291213665FF100832DBF /* bg.png */,
+				D8F1291313665FF100832DBF /* timer_bg.png */,
 				E02BB762126CC1E0006E46A2 /* iTunesArtwork */,
 				D8CD5BD413440E3700101466 /* button.png */,
 				E02BB4FE126CA50F006E46A2 /* Icon@2x.png */,
@@ -1125,6 +1139,9 @@
 				E02BB508126CA50F006E46A2 /* Icon-72.png in Resources */,
 				E02BB763126CC1E0006E46A2 /* iTunesArtwork in Resources */,
 				D8CD5BD513440E3700101466 /* button.png in Resources */,
+				D8F1291413665FF100832DBF /* bg.png in Resources */,
+				D8F1291513665FF100832DBF /* timer_bg.png in Resources */,
+				D8F129B61366723100832DBF /* button_on.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1139,6 +1156,7 @@
 				1F3B9A2D0EF2145700286867 /* CogConnectAppDelegate.m in Sources */,
 				E0F80F60120A0182005866B8 /* RootViewController.m in Sources */,
 				D8CD5BC01344048800101466 /* GameScene.m in Sources */,
+				D8128B2E135BC93E00F2E32E /* Cog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
