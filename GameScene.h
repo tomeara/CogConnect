@@ -17,11 +17,12 @@
 	int _buttonHeight;
 	CGSize _screenSize;
 	int _screenHeightWithTimer;
-	int _timer;
+	double _timer;
 	float _buttonScale;
 	id _rep;
-	CCLabelTTF *_timeLabel;
+	CCLabelBMFont *_timeLabel;
 	bool _started;
+	bool _fail;
 }
 
 +(id) scene;

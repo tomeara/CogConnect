@@ -7,7 +7,7 @@
 //
 
 #import "GameScene.h"
-
+#import "SimpleAudioEngine.h"
 
 @implementation GameScene
 
@@ -25,8 +25,11 @@
 
 		_screenSize = [[CCDirector sharedDirector] winSize];
 		
+		_fail = NO;
+		
 		_timerDisplay = [CCSprite spriteWithFile:@"timer_bg.png"];
-		_timeLabel = [CCLabelTTF labelWithString:@"Hello World" fontName:@"Marker Felt" fontSize:24];
+		//_timeLabel = [CCLabelTTF labelWithString:@"Hello World" fontName:@"Marker Felt" fontSize:24];
+		_timeLabel = [CCLabelBMFont labelWithString:@"Timer" fntFile:@"whitney.fnt"];
 		_buttonNode = [CCNode new];
 		_cog= [CCSprite spriteWithFile:@"cog.png"];
 		_button = [CCSprite spriteWithFile:@"button.png"];
@@ -38,8 +41,8 @@
         [self addChild:bg];
 		
 		//Set game time and move time
-		_timer = 5;
-		_buttonScale = .3;
+		_timer = 0.05;
+		_buttonScale = 1;
 
 		//Set the node
 		_buttonNode.scale = _buttonScale;
@@ -54,8 +57,8 @@
 		
 		_timerDisplay.position = CGPointMake(_screenSize.width / 2, _screenSize.height - 130);
 		[self addChild:_timerDisplay z:2];
-		_timeLabel.position = CGPointMake(_screenSize.width / 2, _screenSize.height - 24);
-		[_timerDisplay addChild:_timeLabel];										   
+		_timeLabel.position = CGPointMake(_screenSize.width / 2, 130);
+		[_timerDisplay addChild:_timeLabel z:3 tag:5];										   
 													   
 		// schedule a callback
         [self scheduleUpdate];  
@@ -75,11 +78,13 @@
 -(void) tick2: (ccTime) dt
 {
 	if (_started == YES){
-		_timer --;
+		_timer = _timer - 0.01;
 		if (_timer > 0) {
-			[_timeLabel setString:[NSString stringWithFormat:@"Time left: %d", _timer]];
+			[_timeLabel setString:[NSString stringWithFormat:@"%g", _timer]];
 		}else{
-			[_timeLabel setString:[NSString stringWithString:@"Time's Up!"]];
+			if (_fail == NO) {
+				[_timeLabel setString:[NSString stringWithString:@"Good"]];
+			}
 		}
 	}
 }
@@ -90,6 +95,7 @@
 
 -(BOOL) ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
 	[_button setTexture:[[CCTextureCache sharedTextureCache] addImage:@"button_on.png"]];
+	[[SimpleAudioEngine sharedEngine] playEffect:@"pop2d.wav"];
 	if(!_started){
 		CGPoint startTouch = [touch locationInView: touch.view];
 		startTouch = [[CCDirector sharedDirector] convertToGL: startTouch];
@@ -132,6 +138,7 @@
 
 -(void) ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event{
 	[_button setTexture:[[CCTextureCache sharedTextureCache] addImage:@"button.png"]];
+	[[SimpleAudioEngine sharedEngine] playEffect:@"pop2b.wav"];
 	CGPoint endTouch = [touch locationInView: [touch view]];		
 	endTouch = [[CCDirector sharedDirector] convertToGL: endTouch];
 	endTouch = [self convertToNodeSpace:endTouch];
@@ -140,10 +147,14 @@
 	CGFloat touchDistance = ccpDistance(_button.position, endTouch);
 	if(touchDistance < _buttonHeight*.5){
 		CCLOG(@"Success");
+		_fail = NO;
+		_started = NO;
 	}else{
 		CCLOG(@"Fail");
 		_buttonNode.position = CGPointMake(_screenSize.width / 2, _screenHeightWithTimer /2);
 		[_timeLabel setString:[NSString stringWithString:@"FAIL!"]];
+		_fail = YES;
+		_started = NO;
 	}
 }
 
