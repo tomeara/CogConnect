@@ -64,7 +64,12 @@
 		50F414F01069373D002A0D5E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414EC1069373D002A0D5E /* Default.png */; };
 		50F414F11069373D002A0D5E /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414ED1069373D002A0D5E /* fps_images.png */; };
 		50F414F21069373D002A0D5E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414EE1069373D002A0D5E /* Icon.png */; };
+		D8110AD7136E106A00999B01 /* pop2d.wav in Resources */ = {isa = PBXBuildFile; fileRef = D8110AD6136E106A00999B01 /* pop2d.wav */; };
+		D8110AD9136E107200999B01 /* pop2b.wav in Resources */ = {isa = PBXBuildFile; fileRef = D8110AD8136E107200999B01 /* pop2b.wav */; };
 		D8128B2E135BC93E00F2E32E /* Cog.m in Sources */ = {isa = PBXBuildFile; fileRef = D8128B2D135BC93E00F2E32E /* Cog.m */; };
+		D8245D8C136AEC6500F15313 /* cog.png in Resources */ = {isa = PBXBuildFile; fileRef = D8245D8B136AEC6500F15313 /* cog.png */; };
+		D8245DA5136B031400F15313 /* whitney.fnt in Resources */ = {isa = PBXBuildFile; fileRef = D8245DA3136B031400F15313 /* whitney.fnt */; };
+		D8245DA6136B031400F15313 /* whitney.png in Resources */ = {isa = PBXBuildFile; fileRef = D8245DA4136B031400F15313 /* whitney.png */; };
 		D8CD5BC01344048800101466 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CD5BBF1344048800101466 /* GameScene.m */; };
 		D8CD5BD513440E3700101466 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = D8CD5BD413440E3700101466 /* button.png */; };
 		D8F1291413665FF100832DBF /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F1291213665FF100832DBF /* bg.png */; };
@@ -319,8 +324,13 @@
 		50F414ED1069373D002A0D5E /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
 		50F414EE1069373D002A0D5E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		50F414EF1069373D002A0D5E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8110AD6136E106A00999B01 /* pop2d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pop2d.wav; sourceTree = "<group>"; };
+		D8110AD8136E107200999B01 /* pop2b.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pop2b.wav; sourceTree = "<group>"; };
 		D8128B2C135BC93E00F2E32E /* Cog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cog.h; sourceTree = "<group>"; };
 		D8128B2D135BC93E00F2E32E /* Cog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cog.m; sourceTree = "<group>"; };
+		D8245D8B136AEC6500F15313 /* cog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cog.png; sourceTree = "<group>"; };
+		D8245DA3136B031400F15313 /* whitney.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = whitney.fnt; sourceTree = "<group>"; };
+		D8245DA4136B031400F15313 /* whitney.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whitney.png; sourceTree = "<group>"; };
 		D8CD5BBE1344048800101466 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = ../GameScene.h; sourceTree = "<group>"; };
 		D8CD5BBF1344048800101466 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameScene.m; path = ../GameScene.m; sourceTree = "<group>"; };
 		D8CD5BD413440E3700101466 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = Images/button.png; sourceTree = SOURCE_ROOT; };
@@ -716,7 +726,12 @@
 		50F414EB1069373D002A0D5E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D8110AD8136E107200999B01 /* pop2b.wav */,
+				D8110AD6136E106A00999B01 /* pop2d.wav */,
+				D8245DA3136B031400F15313 /* whitney.fnt */,
+				D8245DA4136B031400F15313 /* whitney.png */,
 				D8F129B51366723100832DBF /* button_on.png */,
+				D8245D8B136AEC6500F15313 /* cog.png */,
 				D8F1291213665FF100832DBF /* bg.png */,
 				D8F1291313665FF100832DBF /* timer_bg.png */,
 				E02BB762126CC1E0006E46A2 /* iTunesArtwork */,
@@ -1142,6 +1157,11 @@
 				D8F1291413665FF100832DBF /* bg.png in Resources */,
 				D8F1291513665FF100832DBF /* timer_bg.png in Resources */,
 				D8F129B61366723100832DBF /* button_on.png in Resources */,
+				D8245D8C136AEC6500F15313 /* cog.png in Resources */,
+				D8245DA5136B031400F15313 /* whitney.fnt in Resources */,
+				D8245DA6136B031400F15313 /* whitney.png in Resources */,
+				D8110AD7136E106A00999B01 /* pop2d.wav in Resources */,
+				D8110AD9136E107200999B01 /* pop2b.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
