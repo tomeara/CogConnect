@@ -41,7 +41,7 @@
         [self addChild:bg];
 		
 		//Set game time and move time
-		_timer = 0.05;
+		_timer = 0.10f;
 		_buttonScale = 1;
 
 		//Set the node
@@ -78,13 +78,16 @@
 -(void) tick2: (ccTime) dt
 {
 	if (_started == YES){
-		_timer = _timer - 0.01;
-		if (_timer > 0) {
+		_timer = _timer - 0.01f;
+		if (_timer >= 0.01) {
 			[_timeLabel setString:[NSString stringWithFormat:@"%g", _timer]];
 		}else{
 			if (_fail == NO) {
 				[_timeLabel setString:[NSString stringWithString:@"Good"]];
+			}else {
+				[_timeLabel setString:[NSString stringWithString:@"FAIL!"]];
 			}
+
 		}
 	}
 }
@@ -94,68 +97,22 @@
 }
 
 -(BOOL) ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
-	[_button setTexture:[[CCTextureCache sharedTextureCache] addImage:@"button_on.png"]];
-	[[SimpleAudioEngine sharedEngine] playEffect:@"pop2d.wav"];
 	if(!_started){
 		CGPoint startTouch = [touch locationInView: touch.view];
 		startTouch = [[CCDirector sharedDirector] convertToGL: startTouch];
 		startTouch = [self convertToNodeSpace:startTouch];
-		
 		CGFloat touchDistance = ccpDistance(_buttonNode.position, startTouch);
-		if(touchDistance < _buttonHeight*.5){
-			//CCMoveTo *move = [CCMoveTo actionWithDuration:_timer position:CGPointMake(_screenSize.width - _buttonHeight, _screenSize.height - _buttonHeight)];
-			//Bezier Curve Simulation
-			
-			//You can choose the two control point location as well as the endposition location as the way you wish.
-			//cpShape *square = [smgr addPolyAt:cpv(240,160) mass:100 rotation:0 numPoints:4 points:cpv(0, -10), cpv(10, 0), cpv(0, 10), cpv(-10, 0)];
-			//int bezierTotalPoints = 3;
-			
-			id ballMove1 = [CCMoveTo actionWithDuration:3 position:[self getRandomPointOnScreen]];
-			id ballMove2 = [CCMoveTo actionWithDuration:3 position:[self getRandomPointOnScreen]];
-			id ballMove3 = [CCMoveTo actionWithDuration:3 position:[self getRandomPointOnScreen]];
-			id ballMove4 = [CCMoveTo actionWithDuration:3 position:_buttonNode.position];
-			
-			id seq = [CCSequence actions: ballMove1, ballMove2, ballMove3, ballMove4, nil];
-			
-			id moveEase = [CCEaseInOut actionWithAction:seq rate:2];
-			
-			_rep = [CCRepeatForever actionWithAction:moveEase];
-			
-			[_buttonNode runAction:_rep];
-			
-			id cogRotate = [CCRotateBy actionWithDuration:5 angle:360];
-			
-			id cogRepeat = [CCRepeatForever actionWithAction:cogRotate];
-			
-			[_cog runAction:cogRepeat];
-			
-			CCLOG(@"Touch Began");
-			_started = YES;
-		}
+		[self cogMovement:touchDistance];
 	}
 	return YES;
 }
 
 -(void) ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event{
-	[_button setTexture:[[CCTextureCache sharedTextureCache] addImage:@"button.png"]];
-	[[SimpleAudioEngine sharedEngine] playEffect:@"pop2b.wav"];
 	CGPoint endTouch = [touch locationInView: [touch view]];		
 	endTouch = [[CCDirector sharedDirector] convertToGL: endTouch];
 	endTouch = [self convertToNodeSpace:endTouch];
-	CCLOG(@"Touch Ended");
-	
 	CGFloat touchDistance = ccpDistance(_button.position, endTouch);
-	if(touchDistance < _buttonHeight*.5){
-		CCLOG(@"Success");
-		_fail = NO;
-		_started = NO;
-	}else{
-		CCLOG(@"Fail");
-		_buttonNode.position = CGPointMake(_screenSize.width / 2, _screenHeightWithTimer /2);
-		[_timeLabel setString:[NSString stringWithString:@"FAIL!"]];
-		_fail = YES;
-		_started = NO;
-	}
+	[self cogMovement:touchDistance];
 }
 
 -(void) ccTouchMoved:(UITouch *)touch withEvent:(UIEvent *)event{
@@ -163,13 +120,46 @@
 	touchLocation = [[CCDirector sharedDirector] convertToGL: touchLocation];
 	touchLocation = [self convertToNodeSpace:touchLocation];
 	CGFloat touchDistance = ccpDistance(_buttonNode.position, touchLocation);
-	//CCLOG(@"Button: %@ | Touch: %@", NSStringFromCGPoint(_button.position), NSStringFromCGPoint(touchLocation));
-	if(touchDistance < _buttonHeight*.5){
-		[_button setTexture:[[CCTextureCache sharedTextureCache] addImage:@"button_on.png"]];
-	}else {
-		[_button setTexture:[[CCTextureCache sharedTextureCache] addImage:@"button.png"]];
-	}
+	[self cogMovement:touchDistance];
 
+}
+
+-(void) cogMovement:(CGFloat)touchOrigin{
+	if(touchOrigin < _buttonHeight*.5){
+		if (!_moving) {
+			[[SimpleAudioEngine sharedEngine] playEffect:@"pop2d.caf"];
+			[_button setTexture:[[CCTextureCache sharedTextureCache] addImage:@"button_on.png"]];
+			
+			id ballMove1 = [CCMoveTo actionWithDuration:3 position:[self getRandomPointOnScreen]];
+			id ballMove2 = [CCMoveTo actionWithDuration:3 position:[self getRandomPointOnScreen]];
+			id ballMove3 = [CCMoveTo actionWithDuration:3 position:[self getRandomPointOnScreen]];
+			id ballMove4 = [CCMoveTo actionWithDuration:3 position:_buttonNode.position];
+			
+			id seq = [CCSequence actions: ballMove1, ballMove2, ballMove3, ballMove4, nil];
+			id moveEase = [CCEaseInOut actionWithAction:seq rate:2];
+			_rep = [CCRepeatForever actionWithAction:moveEase];
+			[_buttonNode runAction:_rep];
+			
+			id cogRotate = [CCRotateBy actionWithDuration:5 angle:360];
+			_cogRepeat = [CCRepeatForever actionWithAction:cogRotate];
+			[_cog runAction:_cogRepeat];
+			
+			_moving = YES;
+			_started = YES;
+		}
+	}else{
+		if (_moving) {
+			[[SimpleAudioEngine sharedEngine] playEffect:@"pop2b.caf"];
+			[_button setTexture:[[CCTextureCache sharedTextureCache] addImage:@"button.png"]];
+			
+			_buttonNode.position = CGPointMake(_screenSize.width / 2, _screenHeightWithTimer /2);
+			
+			[_cog stopAction:_cogRepeat];
+			
+			_fail = YES;
+			_moving = NO;
+		}
+	}
 }
 
 -(CGPoint) getRandomPointOnScreen{

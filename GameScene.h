@@ -20,11 +20,14 @@
 	double _timer;
 	float _buttonScale;
 	id _rep;
+	id _cogRepeat;
 	CCLabelBMFont *_timeLabel;
 	bool _started;
+	bool _moving;
 	bool _fail;
 }
 
 +(id) scene;
 -(CGPoint) getRandomPointOnScreen;
+-(void) cogMovement:(CGFloat)touchOrigin;
 @end
