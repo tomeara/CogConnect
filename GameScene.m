@@ -24,12 +24,21 @@
 		CCLOG(@"%@: %@", NSStringFromSelector(_cmd), self);
 
 		_screenSize = [[CCDirector sharedDirector] winSize];
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"pop2d.caf"];
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"pop2b.caf"];
 		
 		_fail = NO;
 		
+		//Set difficulty 1-10
+		_difficulty = 8;
+		
+		//Set game time and move time
+		_timer = _difficulty * 0.05f;
+		_buttonScale = 1 - (_difficulty * 0.05f);
+		
 		_timerDisplay = [CCSprite spriteWithFile:@"timer_bg.png"];
 		//_timeLabel = [CCLabelTTF labelWithString:@"Hello World" fontName:@"Marker Felt" fontSize:24];
-		_timeLabel = [CCLabelBMFont labelWithString:@"Timer" fntFile:@"whitney.fnt"];
+		_timeLabel = [CCLabelBMFont labelWithString:@"Start" fntFile:@"whitney.fnt"];
 		_buttonNode = [CCNode new];
 		_cog= [CCSprite spriteWithFile:@"cog.png"];
 		_button = [CCSprite spriteWithFile:@"button.png"];
@@ -39,10 +48,6 @@
 		CCSprite *bg = [CCSprite spriteWithFile:@"bg.png"];
         bg.position = ccp(_screenSize.width/2, _screenSize.height/2);
         [self addChild:bg];
-		
-		//Set game time and move time
-		_timer = 0.10f;
-		_buttonScale = 1;
 
 		//Set the node
 		_buttonNode.scale = _buttonScale;
@@ -63,7 +68,6 @@
 		// schedule a callback
         [self scheduleUpdate];  
         [self schedule: @selector(tick2:) interval:1];
-		
 		
 		self.isTouchEnabled = YES;
 	}
@@ -136,11 +140,11 @@
 			id ballMove4 = [CCMoveTo actionWithDuration:3 position:_buttonNode.position];
 			
 			id seq = [CCSequence actions: ballMove1, ballMove2, ballMove3, ballMove4, nil];
-			id moveEase = [CCEaseInOut actionWithAction:seq rate:2];
+			id moveEase = [CCEaseInOut actionWithAction:seq rate:_difficulty];
 			_rep = [CCRepeatForever actionWithAction:moveEase];
 			[_buttonNode runAction:_rep];
 			
-			id cogRotate = [CCRotateBy actionWithDuration:5 angle:360];
+			id cogRotate = [CCRotateBy actionWithDuration:(11 - _difficulty) angle:360];
 			_cogRepeat = [CCRepeatForever actionWithAction:cogRotate];
 			[_cog runAction:_cogRepeat];
 			
@@ -152,12 +156,14 @@
 			[[SimpleAudioEngine sharedEngine] playEffect:@"pop2b.caf"];
 			[_button setTexture:[[CCTextureCache sharedTextureCache] addImage:@"button.png"]];
 			
-			_buttonNode.position = CGPointMake(_screenSize.width / 2, _screenHeightWithTimer /2);
-			
 			[_cog stopAction:_cogRepeat];
-			
-			_fail = YES;
 			_moving = NO;
+			if (_timer >= 0.01) {
+				_fail = YES;
+			}else {
+				_difficulty++;
+			}
+
 		}
 	}
 }

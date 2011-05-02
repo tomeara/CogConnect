@@ -14,14 +14,15 @@
 	CCSprite *_button;
 	CCSprite *_cog;
 	CCSprite *_timerDisplay;
-	int _buttonHeight;
+	CCLabelBMFont *_timeLabel;
 	CGSize _screenSize;
+	int _buttonHeight;
 	int _screenHeightWithTimer;
+	int _difficulty;
 	double _timer;
 	float _buttonScale;
 	id _rep;
 	id _cogRepeat;
-	CCLabelBMFont *_timeLabel;
 	bool _started;
 	bool _moving;
 	bool _fail;
