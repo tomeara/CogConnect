@@ -13,6 +13,7 @@
 @interface CogConnectAppDelegate : NSObject <UIApplicationDelegate> {
 	UIWindow			*window;
 	RootViewController	*viewController;
+	int _difficulty;
 }
 
 @property (nonatomic, retain) UIWindow *window;

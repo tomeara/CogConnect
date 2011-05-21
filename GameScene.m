@@ -30,14 +30,11 @@
 		_fail = NO;
 		
 		//Set difficulty 1-10
-		_difficulty = 8;
+		_difficulty = 3;
 		
-		//Set game time and move time
-		_timer = _difficulty * 0.05f;
 		_buttonScale = 1 - (_difficulty * 0.05f);
 		
 		_timerDisplay = [CCSprite spriteWithFile:@"timer_bg.png"];
-		//_timeLabel = [CCLabelTTF labelWithString:@"Hello World" fontName:@"Marker Felt" fontSize:24];
 		_timeLabel = [CCLabelBMFont labelWithString:@"Start" fntFile:@"whitney.fnt"];
 		_buttonNode = [CCNode new];
 		_cog= [CCSprite spriteWithFile:@"cog.png"];
@@ -83,13 +80,13 @@
 {
 	if (_started == YES){
 		_timer = _timer - 0.01f;
-		if (_timer >= 0.01) {
+		if ((_timer >= 0.01)&&(!_fail)) {
 			[_timeLabel setString:[NSString stringWithFormat:@"%g", _timer]];
 		}else{
 			if (_fail == NO) {
 				[_timeLabel setString:[NSString stringWithString:@"Good"]];
 			}else {
-				[_timeLabel setString:[NSString stringWithString:@"FAIL!"]];
+				//Move to the next stage
 			}
 
 		}
@@ -101,13 +98,13 @@
 }
 
 -(BOOL) ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
-	if(!_started){
+
 		CGPoint startTouch = [touch locationInView: touch.view];
 		startTouch = [[CCDirector sharedDirector] convertToGL: startTouch];
 		startTouch = [self convertToNodeSpace:startTouch];
 		CGFloat touchDistance = ccpDistance(_buttonNode.position, startTouch);
 		[self cogMovement:touchDistance];
-	}
+
 	return YES;
 }
 
@@ -125,12 +122,16 @@
 	touchLocation = [self convertToNodeSpace:touchLocation];
 	CGFloat touchDistance = ccpDistance(_buttonNode.position, touchLocation);
 	[self cogMovement:touchDistance];
-
 }
 
 -(void) cogMovement:(CGFloat)touchOrigin{
+	CCLOG(@"touch percentage: %f", touchOrigin / _buttonHeight);
 	if(touchOrigin < _buttonHeight*.5){
 		if (!_moving) {
+			
+			//Set game time and move time
+			_timer = _difficulty * 0.05f;
+			
 			[[SimpleAudioEngine sharedEngine] playEffect:@"pop2d.caf"];
 			[_button setTexture:[[CCTextureCache sharedTextureCache] addImage:@"button_on.png"]];
 			
@@ -150,6 +151,7 @@
 			
 			_moving = YES;
 			_started = YES;
+			_fail = NO;
 		}
 	}else{
 		if (_moving) {
@@ -160,10 +162,8 @@
 			_moving = NO;
 			if (_timer >= 0.01) {
 				_fail = YES;
-			}else {
-				_difficulty++;
+				[_timeLabel setString:[NSString stringWithString:@"Retry"]];
 			}
-
 		}
 	}
 }
