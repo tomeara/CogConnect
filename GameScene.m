@@ -154,7 +154,7 @@
 			
 			
 			NSLog(@"rotateRate: %d",[delegate curLevel].rotateRate);
-			id cogRotate = [CCRotateBy actionWithDuration:(11 - [delegate curLevel].rotateRate) angle:360];
+			id cogRotate = [CCRotateBy actionWithDuration:[delegate curLevel].rotateRate angle:360];
 			_cogRepeat = [CCRepeatForever actionWithAction:cogRotate];
 			[_cog runAction:_cogRepeat];
 			
