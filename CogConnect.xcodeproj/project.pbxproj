@@ -259,6 +259,7 @@
 		E02BB8B3126CC224006E46A2 /* ZipUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = E02BB80D126CC224006E46A2 /* ZipUtils.h */; };
 		E02BB8B4126CC224006E46A2 /* ZipUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E02BB80E126CC224006E46A2 /* ZipUtils.m */; };
 		E0F80F60120A0182005866B8 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F80F5F120A0182005866B8 /* RootViewController.m */; };
+		F612875C138C388700EDF33A /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = F612875B138C388700EDF33A /* Level.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -529,6 +530,8 @@
 		E0F80F5D120A0182005866B8 /* GameConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		E0F80F5E120A0182005866B8 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		E0F80F5F120A0182005866B8 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		F612875A138C388700EDF33A /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
+		F612875B138C388700EDF33A /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -631,6 +634,8 @@
 				1F3B9A2B0EF2145700286867 /* CogConnectAppDelegate.m */,
 				D800C70713764857007045D6 /* StartScene.h */,
 				D800C70813764857007045D6 /* StartScene.m */,
+				F612875A138C388700EDF33A /* Level.h */,
+				F612875B138C388700EDF33A /* Level.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1197,6 +1202,7 @@
 				D8128B2E135BC93E00F2E32E /* Cog.m in Sources */,
 				D8110C04136E370E00999B01 /* Global.m in Sources */,
 				D800C70913764857007045D6 /* StartScene.m in Sources */,
+				F612875C138C388700EDF33A /* Level.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

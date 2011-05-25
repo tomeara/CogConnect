@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Level.h"
 
 @class RootViewController;
 
@@ -14,8 +15,16 @@
 	UIWindow			*window;
 	RootViewController	*viewController;
 	int _difficulty;
+	NSMutableArray *levels;
+	int _curLevelIndex;
+
 }
 
 @property (nonatomic, retain) UIWindow *window;
+@property (nonatomic, retain) NSMutableArray *levels;
+
+- (Level *)curLevel;
+- (void)loadNewLevelScene;
+- (void)levelComplete;
 
 @end

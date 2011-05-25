@@ -8,6 +8,7 @@
 
 #import "GameScene.h"
 #import "SimpleAudioEngine.h"
+#import "CogConnectAppDelegate.h"
 
 @implementation GameScene
 
@@ -85,8 +86,10 @@
 		}else{
 			if (_fail == NO) {
 				[_timeLabel setString:[NSString stringWithString:@"Good"]];
+				CogConnectAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+                [delegate levelComplete];
 			}else {
-				//Move to the next stage
+
 			}
 
 		}
@@ -141,11 +144,17 @@
 			id ballMove4 = [CCMoveTo actionWithDuration:3 position:_buttonNode.position];
 			
 			id seq = [CCSequence actions: ballMove1, ballMove2, ballMove3, ballMove4, nil];
-			id moveEase = [CCEaseInOut actionWithAction:seq rate:_difficulty];
+
+			CogConnectAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+			
+			NSLog(@"moveRate: %d",[delegate curLevel].moveRate);
+			id moveEase = [CCEaseInOut actionWithAction:seq rate:[delegate curLevel].moveRate];
 			_rep = [CCRepeatForever actionWithAction:moveEase];
 			[_buttonNode runAction:_rep];
 			
-			id cogRotate = [CCRotateBy actionWithDuration:(11 - _difficulty) angle:360];
+			
+			NSLog(@"rotateRate: %d",[delegate curLevel].rotateRate);
+			id cogRotate = [CCRotateBy actionWithDuration:(11 - [delegate curLevel].rotateRate) angle:360];
 			_cogRepeat = [CCRepeatForever actionWithAction:cogRotate];
 			[_cog runAction:_cogRepeat];
 			

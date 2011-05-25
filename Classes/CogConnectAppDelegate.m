@@ -12,10 +12,12 @@
 #import "GameConfig.h"
 #import "GameScene.h"
 #import "RootViewController.h"
+#import "Level.h"
 
 @implementation CogConnectAppDelegate
 
 @synthesize window;
+@synthesize levels = _levels;
 
 - (void) removeStartupFlicker
 {
@@ -100,6 +102,12 @@
 	
 	[window makeKeyAndVisible];
 	
+	self.levels = [[[NSMutableArray alloc] init] autorelease];
+    Level *level1 = [[[Level alloc] initWithLevelNum:1 moveRate:1 rotateRate:1 scene:[GameScene scene]] autorelease];
+    Level *level2 = [[[Level alloc] initWithLevelNum:2 moveRate:5 rotateRate:5 scene:[GameScene scene]] autorelease];
+    [_levels addObject:level1];
+    [_levels addObject:level2];
+	
 	// Default texture format for PNG/BMP/TIFF/JPEG/GIF images
 	// It can be RGBA8888, RGBA4444, RGB5_A1, RGB565
 	// You can change anytime.
@@ -110,7 +118,28 @@
 	[self removeStartupFlicker];
 	
 	// Run the intro Scene
-	[[CCDirector sharedDirector] runWithScene: [GameScene scene]];		
+	[[CCDirector sharedDirector] runWithScene: (id)[self curLevel].scene];		
+}
+
+- (Level *)curLevel {
+    return [_levels objectAtIndex:_curLevelIndex];
+}
+
+- (void)levelComplete {    
+    
+    _curLevelIndex++;
+    if (_curLevelIndex >= [_levels count]) {
+        _curLevelIndex = 0;
+        //Load win scene
+    } else {
+        [self loadNewLevelScene];
+    }
+    
+}
+
+- (void)loadNewLevelScene {
+	GameScene *currentScene = [self curLevel].scene;
+    [[CCDirector sharedDirector] replaceScene:(CCScene*)currentScene];
 }
 
 
