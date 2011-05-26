@@ -18,7 +18,7 @@
 @synthesize timeSpan = _timeSpan;
 @synthesize scene = _scene;
 
-- (id)initWithLevelNum:(int)levelNum moveRate:(int)moveRate rotateRate:(int)rotateRate buttonScale:(float)buttonScale timeSpan:(float)timeSpan scene:(GameScene*)scene{
+- (id)initWithLevelNum:(int)levelNum moveRate:(int)moveRate rotateRate:(int)rotateRate buttonScale:(float)buttonScale timeSpan:(float)timeSpan scene:(Class)scene{
 	if ((self = [super init])) {
         self.levelNum = levelNum;
         self.moveRate = moveRate;

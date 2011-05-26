@@ -103,8 +103,8 @@
 	[window makeKeyAndVisible];
 	
 	self.levels = [[[NSMutableArray alloc] init] autorelease];
-    Level *level1 = [[[Level alloc] initWithLevelNum:1 moveRate:1 rotateRate:10 buttonScale:0.5 timeSpan:0.15 scene:[GameScene scene]] autorelease];
-    Level *level2 = [[[Level alloc] initWithLevelNum:2 moveRate:5 rotateRate:5 buttonScale:0.5 timeSpan:0.15 scene:[GameScene scene]] autorelease];
+    Level *level1 = [[[Level alloc] initWithLevelNum:1 moveRate:1 rotateRate:10 buttonScale:0.5 timeSpan:0.15 scene:[GameScene class]] autorelease];
+    Level *level2 = [[[Level alloc] initWithLevelNum:2 moveRate:5 rotateRate:5 buttonScale:0.5 timeSpan:0.15 scene:[GameScene class]] autorelease];
     [_levels addObject:level1];
     [_levels addObject:level2];
 	
@@ -118,7 +118,7 @@
 	[self removeStartupFlicker];
 	
 	// Run the intro Scene
-	[[CCDirector sharedDirector] runWithScene: (id)[self curLevel].scene];		
+	[[CCDirector sharedDirector] runWithScene: (id)[[self curLevel].scene scene]];		
 }
 
 - (Level *)curLevel {
@@ -138,7 +138,7 @@
 }
 
 - (void)loadNewLevelScene {
-	GameScene *currentScene = [self curLevel].scene;
+	GameScene *currentScene = [[self curLevel].scene scene];
     [[CCDirector sharedDirector] replaceScene:(CCScene*)currentScene];
 }
 

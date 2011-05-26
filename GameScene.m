@@ -22,6 +22,8 @@
 
 -(id) init{
 	if((self == [super init])){
+		
+		CogConnectAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 		CCLOG(@"%@: %@", NSStringFromSelector(_cmd), self);
 
 		_screenSize = [[CCDirector sharedDirector] winSize];
@@ -32,7 +34,7 @@
 		//Set difficulty 1-10
 		_difficulty = 3;
 		
-		_buttonScale = 1 - (_difficulty * 0.05f);
+		_buttonScale = [delegate curLevel].buttonScale;
 		
 		_timerDisplay = [CCSprite spriteWithFile:@"timer_bg.png"];
 		_timeLabel = [CCLabelBMFont labelWithString:@"Start" fntFile:@"whitney.fnt"];
