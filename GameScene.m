@@ -27,7 +27,6 @@
 		_screenSize = [[CCDirector sharedDirector] winSize];
 		[[SimpleAudioEngine sharedEngine] preloadEffect:@"pop2d.caf"];
 		[[SimpleAudioEngine sharedEngine] preloadEffect:@"pop2b.caf"];
-		
 		_fail = NO;
 		
 		//Set difficulty 1-10
@@ -132,8 +131,10 @@
 	if(touchOrigin < _buttonHeight*.5){
 		if (!_moving) {
 			
+			CogConnectAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+			
 			//Set game time and move time
-			_timer = _difficulty * 0.05f;
+			_timer = [delegate curLevel].timeSpan;
 			
 			[[SimpleAudioEngine sharedEngine] playEffect:@"pop2d.caf"];
 			[_button setTexture:[[CCTextureCache sharedTextureCache] addImage:@"button_on.png"]];
@@ -144,8 +145,6 @@
 			id ballMove4 = [CCMoveTo actionWithDuration:3 position:_buttonNode.position];
 			
 			id seq = [CCSequence actions: ballMove1, ballMove2, ballMove3, ballMove4, nil];
-
-			CogConnectAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 			
 			NSLog(@"moveRate: %d",[delegate curLevel].moveRate);
 			id moveEase = [CCEaseInOut actionWithAction:seq rate:[delegate curLevel].moveRate];

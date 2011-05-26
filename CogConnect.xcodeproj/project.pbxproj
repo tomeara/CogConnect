@@ -69,8 +69,6 @@
 		D8110AD9136E107200999B01 /* pop2b.wav in Resources */ = {isa = PBXBuildFile; fileRef = D8110AD8136E107200999B01 /* pop2b.wav */; };
 		D8110B0F136E1F5300999B01 /* pop2b.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8110B0D136E1F5300999B01 /* pop2b.caf */; };
 		D8110B10136E1F5300999B01 /* pop2d.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8110B0E136E1F5300999B01 /* pop2d.caf */; };
-		D8110C04136E370E00999B01 /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = D8110C03136E370E00999B01 /* Global.m */; };
-		D8128B2E135BC93E00F2E32E /* Cog.m in Sources */ = {isa = PBXBuildFile; fileRef = D8128B2D135BC93E00F2E32E /* Cog.m */; };
 		D8245D8C136AEC6500F15313 /* cog.png in Resources */ = {isa = PBXBuildFile; fileRef = D8245D8B136AEC6500F15313 /* cog.png */; };
 		D8245DA5136B031400F15313 /* whitney.fnt in Resources */ = {isa = PBXBuildFile; fileRef = D8245DA3136B031400F15313 /* whitney.fnt */; };
 		D8245DA6136B031400F15313 /* whitney.png in Resources */ = {isa = PBXBuildFile; fileRef = D8245DA4136B031400F15313 /* whitney.png */; };
@@ -335,10 +333,6 @@
 		D8110AD8136E107200999B01 /* pop2b.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pop2b.wav; sourceTree = "<group>"; };
 		D8110B0D136E1F5300999B01 /* pop2b.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pop2b.caf; sourceTree = "<group>"; };
 		D8110B0E136E1F5300999B01 /* pop2d.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pop2d.caf; sourceTree = "<group>"; };
-		D8110C02136E370E00999B01 /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
-		D8110C03136E370E00999B01 /* Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Global.m; sourceTree = "<group>"; };
-		D8128B2C135BC93E00F2E32E /* Cog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cog.h; sourceTree = "<group>"; };
-		D8128B2D135BC93E00F2E32E /* Cog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cog.m; sourceTree = "<group>"; };
 		D8245D8B136AEC6500F15313 /* cog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cog.png; sourceTree = "<group>"; };
 		D8245DA3136B031400F15313 /* whitney.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = whitney.fnt; sourceTree = "<group>"; };
 		D8245DA4136B031400F15313 /* whitney.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whitney.png; sourceTree = "<group>"; };
@@ -621,10 +615,6 @@
 		2D500B1D0D5A766B00DBA0E3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D8110C02136E370E00999B01 /* Global.h */,
-				D8110C03136E370E00999B01 /* Global.m */,
-				D8128B2C135BC93E00F2E32E /* Cog.h */,
-				D8128B2D135BC93E00F2E32E /* Cog.m */,
 				D8CD5BBE1344048800101466 /* GameScene.h */,
 				D8CD5BBF1344048800101466 /* GameScene.m */,
 				E0F80F5D120A0182005866B8 /* GameConfig.h */,
@@ -1199,8 +1189,6 @@
 				1F3B9A2D0EF2145700286867 /* CogConnectAppDelegate.m in Sources */,
 				E0F80F60120A0182005866B8 /* RootViewController.m in Sources */,
 				D8CD5BC01344048800101466 /* GameScene.m in Sources */,
-				D8128B2E135BC93E00F2E32E /* Cog.m in Sources */,
-				D8110C04136E370E00999B01 /* Global.m in Sources */,
 				D800C70913764857007045D6 /* StartScene.m in Sources */,
 				F612875C138C388700EDF33A /* Level.m in Sources */,
 			);

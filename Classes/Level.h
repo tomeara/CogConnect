@@ -13,14 +13,18 @@
 	int _levelNum;
     int _moveRate;
     int _rotateRate;
+	float _buttonScale;
+	float _timeSpan;
 	GameScene *_scene;
 }
 
 @property (nonatomic, assign) int levelNum;
 @property (nonatomic, assign) int moveRate;
 @property (nonatomic, assign) int rotateRate;
+@property (nonatomic, assign) float buttonScale;
+@property (nonatomic, assign) float timeSpan;
 @property (nonatomic, retain) GameScene *scene;
 
-- (id)initWithLevelNum:(int)levelNum moveRate:(int)moveRate rotateRate:(int)rotateRate scene:(GameScene*)scene;
+- (id)initWithLevelNum:(int)levelNum moveRate:(int)moveRate rotateRate:(int)rotateRate buttonScale:(float)buttonScale timeSpan:(float)timeSpan scene:(GameScene*)scene;
 
 @end
