@@ -9,9 +9,13 @@
 #import "GameScene.h"
 #import "SimpleAudioEngine.h"
 #import "CogConnectAppDelegate.h"
+#import "NSMutableArray+getAverage.h"
+#import "ModelManager.h"
+
 
 @implementation GameScene
 
+@synthesize touchPercentages;
 
 +(id) scene{
 	CCScene *scene = [CCScene node];
@@ -69,6 +73,8 @@
         [self schedule: @selector(tick2:) interval:1];
 		
 		self.isTouchEnabled = YES;
+		
+		self.touchPercentages = [NSMutableArray arrayWithCapacity:0];
 	}
 	return self;
 }
@@ -89,6 +95,17 @@
 				[_timeLabel setString:[NSString stringWithString:@"Good"]];
 				CogConnectAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
                 [delegate levelComplete];
+				
+				ModelManager *modelManager = [ModelManager sharedInstance];
+				
+				//Saving Results
+				Result *result = [modelManager addResult];
+				result.average = [NSNumber numberWithFloat:[self.touchPercentages getAverage]];
+				TestLevel *testLevel = [modelManager getTestLevelWithLevel:[NSNumber numberWithInt:[delegate curLevel].levelNum]];
+				result.testLevel = testLevel;
+				[delegate.test addResultsObject:result];
+				NSLog(@"Average:%f",[result.average floatValue]);
+				[modelManager doSave];
 			}else {
 
 			}
@@ -129,7 +146,9 @@
 }
 
 -(void) cogMovement:(CGFloat)touchOrigin{
-	CCLOG(@"touch percentage: %f", touchOrigin / _buttonHeight);
+	CGFloat touchPercentage = touchOrigin / _buttonHeight;
+	CCLOG(@"touch percentage: %f", touchPercentage);
+	[self.touchPercentages addObject:[NSDecimalNumber numberWithFloat:touchPercentage]];
 	if(touchOrigin < _buttonHeight*.5){
 		if (!_moving) {
 			
@@ -189,6 +208,7 @@
 
 -(void) dealloc{
 	CCLOG(@"%@: %@", NSStringFromSelector(_cmd), self);
+	[touchPercentages release];
 	[super dealloc];
 }
 

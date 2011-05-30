@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "GameScene.h"
+#import "TestLevel.h"
 
 @interface Level : NSObject {
 	int _levelNum;
@@ -16,6 +17,7 @@
 	float _buttonScale;
 	float _timeSpan;
 	Class _scene;
+	TestLevel *_currentTestLevel;
 }
 
 @property (nonatomic, assign) int levelNum;
@@ -24,6 +26,7 @@
 @property (nonatomic, assign) float buttonScale;
 @property (nonatomic, assign) float timeSpan;
 @property (nonatomic, assign) Class scene;
+@property (nonatomic, retain) TestLevel *currentTestLevel;
 
 - (id)initWithLevelNum:(int)levelNum moveRate:(int)moveRate rotateRate:(int)rotateRate buttonScale:(float)buttonScale timeSpan:(float)timeSpan scene:(Class)scene;
 

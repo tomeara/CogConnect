@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
+#import "Test.h"
 
 @interface GameScene : CCLayer {
 	CCNode *_buttonNode;
@@ -26,7 +27,10 @@
 	bool _started;
 	bool _moving;
 	bool _fail;
+	NSMutableArray *touchPercentages;
 }
+
+@property (nonatomic,retain) NSMutableArray *touchPercentages;
 
 +(id) scene;
 -(CGPoint) getRandomPointOnScreen;

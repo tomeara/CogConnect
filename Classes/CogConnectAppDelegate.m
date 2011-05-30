@@ -13,11 +13,13 @@
 #import "GameScene.h"
 #import "RootViewController.h"
 #import "Level.h"
+#import "ModelManager.h"
 
 @implementation CogConnectAppDelegate
 
 @synthesize window;
 @synthesize levels = _levels;
+@synthesize test;
 
 - (void) removeStartupFlicker
 {
@@ -108,6 +110,11 @@
     [_levels addObject:level1];
     [_levels addObject:level2];
 	
+	Test *_test = [[ModelManager sharedInstance] addTest];
+	self.test = _test;
+	
+	[[ModelManager sharedInstance] doSave];
+	
 	// Default texture format for PNG/BMP/TIFF/JPEG/GIF images
 	// It can be RGBA8888, RGBA4444, RGB5_A1, RGB565
 	// You can change anytime.
@@ -180,6 +187,7 @@
 }
 
 - (void)dealloc {
+	[test release];
 	[[CCDirector sharedDirector] release];
 	[window release];
 	[super dealloc];

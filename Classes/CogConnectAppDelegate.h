@@ -17,11 +17,13 @@
 	int _difficulty;
 	NSMutableArray *levels;
 	int _curLevelIndex;
+	Test *test;
 
 }
 
 @property (nonatomic, retain) UIWindow *window;
 @property (nonatomic, retain) NSMutableArray *levels;
+@property (nonatomic,retain) Test *test;
 
 - (Level *)curLevel;
 - (void)loadNewLevelScene;

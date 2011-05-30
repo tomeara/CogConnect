@@ -258,6 +258,15 @@
 		E02BB8B4126CC224006E46A2 /* ZipUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E02BB80E126CC224006E46A2 /* ZipUtils.m */; };
 		E0F80F60120A0182005866B8 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F80F5F120A0182005866B8 /* RootViewController.m */; };
 		F612875C138C388700EDF33A /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = F612875B138C388700EDF33A /* Level.m */; };
+		F6128988138EB72900EDF33A /* NSMutableArray+getAverage.m in Sources */ = {isa = PBXBuildFile; fileRef = F6128987138EB72900EDF33A /* NSMutableArray+getAverage.m */; };
+		F6128A78138ECDA800EDF33A /* CogConnect.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = F6128A77138ECDA800EDF33A /* CogConnect.xcdatamodel */; };
+		F6128AE0138EDD7900EDF33A /* ModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F6128AD5138EDD7900EDF33A /* ModelManager.m */; };
+		F6128AE1138EDD7900EDF33A /* NSManagedObject+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = F6128AD7138EDD7900EDF33A /* NSManagedObject+Extras.m */; };
+		F6C0CBC91390485A0055764C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C0CBC81390485A0055764C /* CoreData.framework */; };
+		F6C0D0C813940F080055764C /* TestLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C0D0C113940F080055764C /* TestLevel.m */; };
+		F6C0D0C913940F080055764C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C0D0C313940F080055764C /* User.m */; };
+		F6C0D0CA13940F080055764C /* Result.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C0D0C513940F080055764C /* Result.m */; };
+		F6C0D0CB13940F080055764C /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C0D0C713940F080055764C /* Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -526,6 +535,22 @@
 		E0F80F5F120A0182005866B8 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		F612875A138C388700EDF33A /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
 		F612875B138C388700EDF33A /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level.m; sourceTree = "<group>"; };
+		F6128986138EB72900EDF33A /* NSMutableArray+getAverage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+getAverage.h"; sourceTree = "<group>"; };
+		F6128987138EB72900EDF33A /* NSMutableArray+getAverage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+getAverage.m"; sourceTree = "<group>"; };
+		F6128A77138ECDA800EDF33A /* CogConnect.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = CogConnect.xcdatamodel; sourceTree = "<group>"; };
+		F6128AD4138EDD7900EDF33A /* ModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelManager.h; sourceTree = "<group>"; };
+		F6128AD5138EDD7900EDF33A /* ModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelManager.m; sourceTree = "<group>"; };
+		F6128AD6138EDD7900EDF33A /* NSManagedObject+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+Extras.h"; sourceTree = "<group>"; };
+		F6128AD7138EDD7900EDF33A /* NSManagedObject+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Extras.m"; sourceTree = "<group>"; };
+		F6C0CBC81390485A0055764C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F6C0D0C013940F080055764C /* TestLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLevel.h; sourceTree = "<group>"; };
+		F6C0D0C113940F080055764C /* TestLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLevel.m; sourceTree = "<group>"; };
+		F6C0D0C213940F080055764C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		F6C0D0C313940F080055764C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		F6C0D0C413940F080055764C /* Result.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Result.h; sourceTree = "<group>"; };
+		F6C0D0C513940F080055764C /* Result.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Result.m; sourceTree = "<group>"; };
+		F6C0D0C613940F080055764C /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		F6C0D0C713940F080055764C /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -543,6 +568,7 @@
 				506EDB88102F4C4000A389B3 /* libz.dylib in Frameworks */,
 				506EDBA5102F4C9F00A389B3 /* AVFoundation.framework in Frameworks */,
 				506EE1A91030508200A389B3 /* libcocos2d libraries.a in Frameworks */,
+				F6C0CBC91390485A0055764C /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +609,7 @@
 				50F414EB1069373D002A0D5E /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				F6C0CBC81390485A0055764C /* CoreData.framework */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -615,6 +642,9 @@
 		2D500B1D0D5A766B00DBA0E3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F6128AD3138EDD7900EDF33A /* Managers */,
+				F6128A9B138EDC5200EDF33A /* Entities */,
+				F6128984138EB70D00EDF33A /* Helpers */,
 				D8CD5BBE1344048800101466 /* GameScene.h */,
 				D8CD5BBF1344048800101466 /* GameScene.m */,
 				E0F80F5D120A0182005866B8 /* GameConfig.h */,
@@ -756,6 +786,7 @@
 				50F414ED1069373D002A0D5E /* fps_images.png */,
 				50F414EE1069373D002A0D5E /* Icon.png */,
 				50F414EF1069373D002A0D5E /* Info.plist */,
+				F6128A77138ECDA800EDF33A /* CogConnect.xcdatamodel */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -964,6 +995,41 @@
 				E02BB80E126CC224006E46A2 /* ZipUtils.m */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		F6128984138EB70D00EDF33A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F6128986138EB72900EDF33A /* NSMutableArray+getAverage.h */,
+				F6128987138EB72900EDF33A /* NSMutableArray+getAverage.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		F6128A9B138EDC5200EDF33A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F6C0D0C013940F080055764C /* TestLevel.h */,
+				F6C0D0C113940F080055764C /* TestLevel.m */,
+				F6C0D0C213940F080055764C /* User.h */,
+				F6C0D0C313940F080055764C /* User.m */,
+				F6C0D0C413940F080055764C /* Result.h */,
+				F6C0D0C513940F080055764C /* Result.m */,
+				F6C0D0C613940F080055764C /* Test.h */,
+				F6C0D0C713940F080055764C /* Test.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		F6128AD3138EDD7900EDF33A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F6128AD4138EDD7900EDF33A /* ModelManager.h */,
+				F6128AD5138EDD7900EDF33A /* ModelManager.m */,
+				F6128AD6138EDD7900EDF33A /* NSManagedObject+Extras.h */,
+				F6128AD7138EDD7900EDF33A /* NSManagedObject+Extras.m */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1191,6 +1257,14 @@
 				D8CD5BC01344048800101466 /* GameScene.m in Sources */,
 				D800C70913764857007045D6 /* StartScene.m in Sources */,
 				F612875C138C388700EDF33A /* Level.m in Sources */,
+				F6128988138EB72900EDF33A /* NSMutableArray+getAverage.m in Sources */,
+				F6128A78138ECDA800EDF33A /* CogConnect.xcdatamodel in Sources */,
+				F6128AE0138EDD7900EDF33A /* ModelManager.m in Sources */,
+				F6128AE1138EDD7900EDF33A /* NSManagedObject+Extras.m in Sources */,
+				F6C0D0C813940F080055764C /* TestLevel.m in Sources */,
+				F6C0D0C913940F080055764C /* User.m in Sources */,
+				F6C0D0CA13940F080055764C /* Result.m in Sources */,
+				F6C0D0CB13940F080055764C /* Test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
