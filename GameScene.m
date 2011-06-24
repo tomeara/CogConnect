@@ -15,7 +15,7 @@
 
 @implementation GameScene
 
-@synthesize touchPercentages;
+@synthesize _touchPercentages, _start;
 
 +(id) scene{
 	CCScene *scene = [CCScene node];
@@ -26,7 +26,7 @@
 
 -(id) init{
 	if((self == [super init])){
-		
+		_numberOfTries = 0;
 		CogConnectAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 		CCLOG(@"%@: %@", NSStringFromSelector(_cmd), self);
 
@@ -74,7 +74,7 @@
 		
 		self.isTouchEnabled = YES;
 		
-		self.touchPercentages = [NSMutableArray arrayWithCapacity:0];
+		self._touchPercentages = [NSMutableArray arrayWithCapacity:0];
 	}
 	return self;
 }
@@ -100,11 +100,17 @@
 				
 				//Saving Results
 				Result *result = [modelManager addResult];
-				result.average = [NSNumber numberWithFloat:[self.touchPercentages getAverage]];
+				result.average = [NSNumber numberWithFloat:[self._touchPercentages getAverage]];
+				result.start = self._start;
+				result.end = [NSDate date];
+				NSLog(@"Level Ended: %@",result.end);
+				NSLog(@"start:%@ end:%@",result.start,result.end);
 				TestLevel *testLevel = [modelManager getTestLevelWithLevel:[NSNumber numberWithInt:[delegate curLevel].levelNum]];
 				result.testLevel = testLevel;
+				result.numerOfTries = [NSNumber numberWithInt:_numberOfTries];
 				[delegate.test addResultsObject:result];
 				NSLog(@"Average:%f",[result.average floatValue]);
+				NSLog(@"Number of tries:%d",_numberOfTries);
 				[modelManager doSave];
 			}else {
 
@@ -135,6 +141,7 @@
 	endTouch = [self convertToNodeSpace:endTouch];
 	CGFloat touchDistance = ccpDistance(_button.position, endTouch);
 	[self cogMovement:touchDistance];
+	NSLog(@"ccTouchEnded");
 }
 
 -(void) ccTouchMoved:(UITouch *)touch withEvent:(UIEvent *)event{
@@ -146,12 +153,13 @@
 }
 
 -(void) cogMovement:(CGFloat)touchOrigin{
-	CGFloat touchPercentage = touchOrigin / _buttonHeight;
-	CCLOG(@"touch percentage: %f", touchPercentage);
-	[self.touchPercentages addObject:[NSDecimalNumber numberWithFloat:touchPercentage]];
 	if(touchOrigin < _buttonHeight*.5){
 		if (!_moving) {
-			
+			if(_numberOfTries==0){
+				self._start = [NSDate date];
+				NSLog(@"Level Started %@",self._start);
+				_numberOfTries++;
+			}
 			CogConnectAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 			
 			//Set game time and move time
@@ -181,7 +189,12 @@
 			_moving = YES;
 			_started = YES;
 			_fail = NO;
+		} else {
+			CGFloat touchPercentage = touchOrigin / _buttonHeight;
+			CCLOG(@"touch percentage: %f", touchPercentage);
+			[self._touchPercentages addObject:[NSDecimalNumber numberWithFloat:touchPercentage]];
 		}
+
 	}else{
 		if (_moving) {
 			[[SimpleAudioEngine sharedEngine] playEffect:@"pop2b.caf"];
@@ -192,6 +205,7 @@
 			if (_timer >= 0.01) {
 				_fail = YES;
 				[_timeLabel setString:[NSString stringWithString:@"Retry"]];
+				_numberOfTries++;
 			}
 		}
 	}
@@ -208,7 +222,8 @@
 
 -(void) dealloc{
 	CCLOG(@"%@: %@", NSStringFromSelector(_cmd), self);
-	[touchPercentages release];
+	[_touchPercentages release];
+	[_start release];
 	[super dealloc];
 }
 

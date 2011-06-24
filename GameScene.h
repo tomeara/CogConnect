@@ -27,10 +27,13 @@
 	bool _started;
 	bool _moving;
 	bool _fail;
-	NSMutableArray *touchPercentages;
+	NSMutableArray *_touchPercentages;
+	NSDate *_start;
+	int _numberOfTries;
 }
 
-@property (nonatomic,retain) NSMutableArray *touchPercentages;
+@property (nonatomic,retain) NSMutableArray *_touchPercentages;
+@property (nonatomic,retain) NSDate *_start;
 
 +(id) scene;
 -(CGPoint) getRandomPointOnScreen;

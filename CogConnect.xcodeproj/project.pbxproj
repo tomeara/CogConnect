@@ -262,10 +262,10 @@
 		F6128A78138ECDA800EDF33A /* CogConnect.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = F6128A77138ECDA800EDF33A /* CogConnect.xcdatamodel */; };
 		F6128AE0138EDD7900EDF33A /* ModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F6128AD5138EDD7900EDF33A /* ModelManager.m */; };
 		F6128AE1138EDD7900EDF33A /* NSManagedObject+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = F6128AD7138EDD7900EDF33A /* NSManagedObject+Extras.m */; };
+		F68B6A4313B5395300B7BB9B /* Result.m in Sources */ = {isa = PBXBuildFile; fileRef = F68B6A4213B5395300B7BB9B /* Result.m */; };
 		F6C0CBC91390485A0055764C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C0CBC81390485A0055764C /* CoreData.framework */; };
 		F6C0D0C813940F080055764C /* TestLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C0D0C113940F080055764C /* TestLevel.m */; };
 		F6C0D0C913940F080055764C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C0D0C313940F080055764C /* User.m */; };
-		F6C0D0CA13940F080055764C /* Result.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C0D0C513940F080055764C /* Result.m */; };
 		F6C0D0CB13940F080055764C /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C0D0C713940F080055764C /* Test.m */; };
 /* End PBXBuildFile section */
 
@@ -542,13 +542,13 @@
 		F6128AD5138EDD7900EDF33A /* ModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelManager.m; sourceTree = "<group>"; };
 		F6128AD6138EDD7900EDF33A /* NSManagedObject+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+Extras.h"; sourceTree = "<group>"; };
 		F6128AD7138EDD7900EDF33A /* NSManagedObject+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Extras.m"; sourceTree = "<group>"; };
+		F68B6A4113B5395300B7BB9B /* Result.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Result.h; sourceTree = "<group>"; };
+		F68B6A4213B5395300B7BB9B /* Result.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Result.m; sourceTree = "<group>"; };
 		F6C0CBC81390485A0055764C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		F6C0D0C013940F080055764C /* TestLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLevel.h; sourceTree = "<group>"; };
 		F6C0D0C113940F080055764C /* TestLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLevel.m; sourceTree = "<group>"; };
 		F6C0D0C213940F080055764C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		F6C0D0C313940F080055764C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		F6C0D0C413940F080055764C /* Result.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Result.h; sourceTree = "<group>"; };
-		F6C0D0C513940F080055764C /* Result.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Result.m; sourceTree = "<group>"; };
 		F6C0D0C613940F080055764C /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		F6C0D0C713940F080055764C /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1009,12 +1009,12 @@
 		F6128A9B138EDC5200EDF33A /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				F68B6A4113B5395300B7BB9B /* Result.h */,
+				F68B6A4213B5395300B7BB9B /* Result.m */,
 				F6C0D0C013940F080055764C /* TestLevel.h */,
 				F6C0D0C113940F080055764C /* TestLevel.m */,
 				F6C0D0C213940F080055764C /* User.h */,
 				F6C0D0C313940F080055764C /* User.m */,
-				F6C0D0C413940F080055764C /* Result.h */,
-				F6C0D0C513940F080055764C /* Result.m */,
 				F6C0D0C613940F080055764C /* Test.h */,
 				F6C0D0C713940F080055764C /* Test.m */,
 			);
@@ -1263,8 +1263,8 @@
 				F6128AE1138EDD7900EDF33A /* NSManagedObject+Extras.m in Sources */,
 				F6C0D0C813940F080055764C /* TestLevel.m in Sources */,
 				F6C0D0C913940F080055764C /* User.m in Sources */,
-				F6C0D0CA13940F080055764C /* Result.m in Sources */,
 				F6C0D0CB13940F080055764C /* Test.m in Sources */,
+				F68B6A4313B5395300B7BB9B /* Result.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
